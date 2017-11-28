@@ -1,0 +1,388 @@
+<codestructure version="5.13">
+<phptree>
+<treenode node="API_SECRET;PHP:PHP Word;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\library\sample_token\iphone.php;f8;13;18;13;;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\library\sample_token\android.php;f8;9;18;9;;;;vpos;;v;;r&apos;c1e620fa708a1d5696fb991c1bde5662&apos;;;d-1,-1;;b0,0;;m">
+</treenode>
+<treenode node="APP_PATH;PHP:PHP Word;C:\Program Files (x86)\Ampps\www\Facebook_Tools\public\index.php;f8;6;16;6;;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\config\config.php;f31;6;39;6;;;;vpos;;v;;rBASE_PATH . &apos;/app&apos;;;d-1,-1;;b0,0;;m">
+</treenode>
+<treenode node="BASE_PATH;PHP:PHP Word;C:\Program Files (x86)\Ampps\www\Facebook_Tools\public\index.php;f8;5;17;5;;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\config\config.php;f32;5;41;5;;;;vpos;;v;;rdirname(__DIR__;;d-1,-1;;b0,0;;m">
+</treenode>
+<treenode node="BASE_URL;PHP:PHP Word;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\library\sample_token\iphone.php;f8;15;16;15;;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\library\sample_token\android.php;f8;11;16;11;;;;vpos;;v;;r&apos;https://api.facebook.com/restserver.php&apos;;;d-1,-1;;b0,0;;m">
+</treenode>
+<treenode node="BatchAddFriendController;PHP:Class Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\controllers\BatchAddFriendController.php;f0;2;1;169;;;;vpos;;vControllerBase;;c;;r;;d0,3;;b0,0;;m">
+<treenode node="checkStopBatch;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\controllers\BatchAddFriendController.php;f11;16;5;22;;;;vpos;;v;;r;;d45,16;;b1,0;;mfileLock;;p">
+</treenode>
+<treenode node="GetListFriends;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\controllers\BatchAddFriendController.php;f11;24;5;45;;;;vpos;;v;;r;;d56,24;;b1,0;;mfileLock;;pm_user_id;;p">
+</treenode>
+<treenode node="GetListTokens;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\controllers\BatchAddFriendController.php;f11;47;5;65;;;;vpos;;v;;r;;d45,47;;b1,0;;mm_user_id;;p">
+</treenode>
+<treenode node="indexAction;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\controllers\BatchAddFriendController.php;f11;5;5;14;;;;vpos;;v;;r;;d4,6;;b1,0;;m">
+</treenode>
+<treenode node="main;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\controllers\BatchAddFriendController.php;f11;67;5;168;;;;vpos;;v;;r;;d4,68;;b1,0;;m">
+</treenode>
+</treenode>
+<treenode node="ControllerBase;PHP:Class Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\controllers\ControllerBase.php;f0;5;1;73;;;;vpos;;vController;;c;;r;;d0,6;;b0,0;;m">
+<treenode node="checkAuth;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\controllers\ControllerBase.php;f11;57;5;71;;;;vpos;;v;;r;;d4,58;;b1,0;;m">
+</treenode>
+<treenode node="getConfig;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\controllers\ControllerBase.php;f11;42;5;45;;;;vpos;;v;;r;;d4,43;;b1,0;;m">
+</treenode>
+<treenode node="getDefine;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\controllers\ControllerBase.php;f11;32;5;35;;;;vpos;;v;;r;;d4,33;;b1,0;;m">
+</treenode>
+<treenode node="getSession;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\controllers\ControllerBase.php;f11;37;5;40;;;;vpos;;v;;r;;d4,38;;b1,0;;m">
+</treenode>
+<treenode node="getUrl;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\controllers\ControllerBase.php;f11;47;5;50;;;;vpos;;v;;r;;d4,48;;b1,0;;m">
+</treenode>
+<treenode node="indexAction;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\controllers\ControllerBase.php;f11;52;5;55;;;;vpos;;v;;r;;d4,53;;b1,0;;m">
+</treenode>
+<treenode node="initialize;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\controllers\ControllerBase.php;f11;13;5;30;;;;vpos;;v;;r;;d4,14;;b1,0;;m">
+</treenode>
+<treenode node="onConstruct;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\controllers\ControllerBase.php;f11;7;5;11;;;;vpos;;v;;r;;d4,8;;b1,0;;m">
+</treenode>
+</treenode>
+<treenode node="curlpost;PHP:Class Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\library\curlpost.php;f0;2;1;316;;;;vpos;;v;;r;;d0,3;;b0,0;;m">
+<treenode node="cURL;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\library\curlpost.php;f8;244;2;273;;;;vpos;;v;;r;;d65,244;;b1,0;;murl;;pcookie;;pPostFields;;p">
+</treenode>
+<treenode node="execute_batch;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\library\curlpost.php;f8;275;2;315;;;;vpos;;v;;r;;d74,275;;b1,0;;murl;;pcookie;;pPostFields;;p">
+</treenode>
+<treenode node="getCountFriend;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\library\curlpost.php;f8;195;2;214;;;;vpos;;v;;r;;d51,195;;b1,0;;maccess_token;;puid;;p">
+</treenode>
+<treenode node="getListFriendsRequest;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\library\curlpost.php;f8;23;2;27;;;;vpos;;v;;r;;d53,23;;b1,0;;maccess_token;;p">
+</treenode>
+<treenode node="getMe;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\library\curlpost.php;f8;174;2;179;;;;vpos;;v;;r;;d37,174;;b1,0;;maccess_token;;p">
+</treenode>
+<treenode node="getNewsFeedData;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\library\curlpost.php;f8;9;2;14;;;;vpos;;v;;r;;d47,9;;b1,0;;maccess_token;;p">
+</treenode>
+<treenode node="getPHPExecutableFromPath;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\library\curlpost.php;f8;227;2;242;;;;vpos;;v;;r;;d44,227;;b1,0;;m">
+</treenode>
+<treenode node="getUidInfo;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\library\curlpost.php;f8;181;2;186;;;;vpos;;v;;r;;d48,181;;b1,0;;maccess_token;;puid;;p">
+</treenode>
+<treenode node="getUserProfile;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\library\curlpost.php;f8;16;2;21;;;;vpos;;v;;r;;d46,16;;b1,0;;maccess_token;;p">
+</treenode>
+<treenode node="graphRequest_GET;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\library\curlpost.php;f9;222;2;225;;;;vpos;;v;;r;;d45,222;;b3,0;;mgraphUrl;;p">
+</treenode>
+<treenode node="graphRequest_POST;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\library\curlpost.php;f9;216;2;220;;;;vpos;;v;;r;;d98,216;;b3,0;;maccess_token;;pgraphUrl;;pPostFields;;p">
+</treenode>
+<treenode node="setAddFriend;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\library\curlpost.php;f8;188;2;193;;;;vpos;;v;;r;;d70,188;;b1,0;;maccess_token;;ptoID;;p">
+</treenode>
+<treenode node="setAllowFriendRequest;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\library\curlpost.php;f8;29;2;42;;;;vpos;;v;;r;;d59,29;;b1,0;;maccess_token;;puid;;p">
+</treenode>
+<treenode node="setAvatar;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\library\curlpost.php;f8;102;2;137;;;;vpos;;v;;r;;d56,102;;b1,0;;maccess_token;;pupload_image;;p">
+</treenode>
+<treenode node="setCover;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\library\curlpost.php;f8;139;2;172;;;;vpos;;v;;r;;d55,139;;b1,0;;maccess_token;;pupload_image;;p">
+</treenode>
+<treenode node="setPost;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\library\curlpost.php;f8;44;2;100;;;;vpos;;v;;r;;d105,44;;b1,0;;maccess_token;;pcontent;;plink;;ptags_id;;pupload_image;;p">
+</treenode>
+</treenode>
+<treenode node="Friend;PHP:Class Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\Friend.php;f0;2;1;62;;;;vpos;;vModelBase;;c;;r;;d0,3;;b0,0;;m">
+<treenode node="getFriends;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\Friend.php;f11;4;5;35;;;;vpos;;v;;r;;d4,5;;b1,0;;m">
+</treenode>
+<treenode node="insertFriend;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\Friend.php;f11;37;5;60;;;;vpos;;v;;r;;d4,38;;b1,0;;mparam;;p">
+</treenode>
+</treenode>
+<treenode node="FriendsController;PHP:Class Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\controllers\FriendsController.php;f0;2;1;88;;;;vpos;;vControllerBase;;c;;r;;d0,3;;b0,0;;m">
+<treenode node="execFriendsRequestAction;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\controllers\FriendsController.php;f11;63;5;87;;;;vpos;;v;;r;;d4,64;;b1,0;;m">
+</treenode>
+<treenode node="importUidAction;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\controllers\FriendsController.php;f11;21;5;62;;;;vpos;;v;;r;;d4,22;;b1,0;;m">
+</treenode>
+<treenode node="indexAction;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\controllers\FriendsController.php;f11;4;5;19;;;;vpos;;v;;r;;d4,5;;b1,0;;m">
+</treenode>
+</treenode>
+<treenode node="GetUidController;PHP:Class Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\controllers\GetUidController.php;f0;2;1;5;;;;vpos;;vControllerBase;;c;;r;;d0,3;;b0,0;;m">
+</treenode>
+<treenode node="HiddenBatch;PHP:Class Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\HiddenBatch.php;f0;2;1;136;;;;vpos;;vModelBase;;c;;r;;d0,3;;b0,0;;m">
+<treenode node="getActiveTokenList;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\HiddenBatch.php;f11;4;5;42;;;;vpos;;v;;r;;d4,5;;b1,0;;mm_user_id;;p">
+</treenode>
+<treenode node="getFriendListProcess;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\HiddenBatch.php;f11;44;5;80;;;;vpos;;v;;r;;d4,45;;b1,0;;mm_user_id;;p">
+</treenode>
+<treenode node="updateFriendStatus;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\HiddenBatch.php;f11;109;5;134;;;;vpos;;v;;r;;d46,109;;b1,0;;mparam;;p">
+</treenode>
+<treenode node="updateTokenStatus;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\HiddenBatch.php;f11;82;5;107;;;;vpos;;v;;r;;d45,82;;b1,0;;mparam;;p">
+</treenode>
+</treenode>
+<treenode node="IndexController;PHP:Class Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\controllers\IndexController.php;f0;2;1;5;;;;vpos;;vControllerBase;;c;;r;;d0,3;;b0,0;;m">
+</treenode>
+<treenode node="iphonetoken;PHP:Class Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\library\iphonetoken.php;f0;2;1;67;;;;vpos;;v;;r;;d0,3;;b0,0;;m">
+<treenode node="API_SECRET;PHP:PHP Word;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\library\iphonetoken.php;f6;5;17;5;;;;vpos;;v;;r&quot;c1e620fa708a1d5696fb991c1bde5662&quot;;;d-1,-1;;b0,0;;m">
+</treenode>
+<treenode node="URL_API_FB;PHP:PHP Word;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\library\iphonetoken.php;f6;6;17;6;;;;vpos;;v;;r&quot;https://api.facebook.com/restserver.php&quot;;;d-1,-1;;b0,0;;m">
+</treenode>
+<treenode node="cURL;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\library\iphonetoken.php;f9;42;2;65;;;;vpos;;v;;r;;d60,42;;b3,0;;mmethod;;purl;;pdata;;p">
+</treenode>
+<treenode node="get_token;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\library\iphonetoken.php;f8;8;2;31;;;;vpos;;v;;r;;d40,8;;b1,0;;muser;;ppass;;p">
+</treenode>
+<treenode node="sign_creator;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\library\iphonetoken.php;f9;33;2;41;;;;vpos;;v;;r;;d38,33;;b3,0;;mdata;;p">
+</treenode>
+</treenode>
+<treenode node="LoginController;PHP:Class Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\controllers\LoginController.php;f0;2;1;46;;;;vpos;;vControllerBase;;c;;r;;d0,3;;b0,0;;m">
+<treenode node="authAction;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\controllers\LoginController.php;f11;9;5;44;;;;vpos;;v;;r;;d4,10;;b1,0;;m">
+</treenode>
+<treenode node="indexAction;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\controllers\LoginController.php;f11;5;5;8;;;;vpos;;v;;r;;d4,6;;b1,0;;m">
+</treenode>
+</treenode>
+<treenode node="ModelBase;PHP:Class Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\ModelBase.php;f0;2;1;57;;;;vpos;;vModel;;c;;r;;d0,3;;b0,0;;m">
+<treenode node="getConfig;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\ModelBase.php;f11;47;5;50;;;;vpos;;v;;r;;d4,48;;b1,0;;m">
+</treenode>
+<treenode node="getDefine;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\ModelBase.php;f11;37;5;40;;;;vpos;;v;;r;;d4,38;;b1,0;;m">
+</treenode>
+<treenode node="getSession;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\ModelBase.php;f11;42;5;45;;;;vpos;;v;;r;;d4,43;;b1,0;;m">
+</treenode>
+<treenode node="getUrl;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\ModelBase.php;f11;52;5;55;;;;vpos;;v;;r;;d4,53;;b1,0;;m">
+</treenode>
+<treenode node="sqlExecute;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\ModelBase.php;f11;22;5;35;;;;vpos;;v;;r;;d4,23;;b1,0;;msql;;pparam;;p">
+</treenode>
+<treenode node="sqlQuery;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\ModelBase.php;f11;4;5;20;;;;vpos;;v;;r;;d4,5;;b1,0;;msql;;pparam;;p">
+</treenode>
+</treenode>
+<treenode node="pagetoken;PHP:Class Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\library\pagetoken.php;f0;2;1;81;;;;vpos;;v;;r;;d0,3;;b0,0;;m">
+<treenode node="cURL;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\library\pagetoken.php;f9;57;2;80;;;;vpos;;v;;r;;d66,57;;b3,0;;murl;;pcookie;;pPostFields;;p">
+</treenode>
+<treenode node="get_token;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\library\pagetoken.php;f8;4;2;37;;;;vpos;;v;;r;;d40,4;;b1,0;;muser;;ppass;;p">
+</treenode>
+<treenode node="getCookie;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\library\pagetoken.php;f9;39;2;55;;;;vpos;;v;;r;;d34,39;;b3,0;;mpath;;p">
+</treenode>
+</treenode>
+<treenode node="PostFeedController;PHP:Class Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\controllers\PostFeedController.php;f0;2;1;58;;;;vpos;;vControllerBase;;c;;r;;d0,3;;b0,0;;m">
+<treenode node="createPostAction;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\controllers\PostFeedController.php;f11;5;5;57;;;;vpos;;v;;r;;d4,6;;b1,0;;m">
+</treenode>
+</treenode>
+<treenode node="ProfilesController;PHP:Class Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\controllers\ProfilesController.php;f0;2;1;108;;;;vpos;;vControllerBase;;c;;r;;d0,3;;b0,0;;m">
+<treenode node="indexAction;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\controllers\ProfilesController.php;f11;4;5;11;;;;vpos;;v;;r;;d4,5;;b1,0;;m">
+</treenode>
+<treenode node="update_photo_profile;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\controllers\ProfilesController.php;f11;61;5;107;;;;vpos;;v;;r;;d57,61;;b1,0;;mparams;;pavatar;;p">
+</treenode>
+<treenode node="updateCoverAction;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\controllers\ProfilesController.php;f11;37;5;59;;;;vpos;;v;;r;;d4,38;;b1,0;;m">
+</treenode>
+<treenode node="updatePictureAction;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\controllers\ProfilesController.php;f11;13;5;35;;;;vpos;;v;;r;;d4,14;;b1,0;;m">
+</treenode>
+</treenode>
+<treenode node="TableDefine;PHP:Class Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableDefine.php;f0;2;1;227;;;;vpos;;vModel;;c;;r;;d0,3;;b0,0;;m">
+<treenode node="find;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableDefine.php;f18;211;5;214;;;;vpos;;vMDefine;;r&#10;Definition&#10;    find($parameters = null)&#10;&#10;Description&#10;     Allows to query a set of records that match the specified conditions&#10;&#10;Parameters:&#10;    mixed $parameters&#10;&#10;Return:&#10;   []|MDefine|\Phalcon\Mvc\Model\ResultSetInterface;;d4,212;;b1,5;;mmixed $parameters;;p">
+</treenode>
+<treenode node="findFirst;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableDefine.php;f18;222;5;225;;;;vpos;;vMDefine;;r&#10;Definition&#10;    findFirst($parameters = null)&#10;&#10;Description&#10;     Allows to query the first record that match the specified conditions&#10;&#10;Parameters:&#10;    mixed $parameters&#10;&#10;Return:&#10;   |\Phalcon\Mvc\Model\ResultInterface;;d4,223;;b1,5;;mmixed $parameters;;p">
+</treenode>
+<treenode node="getAddDatetime;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableDefine.php;f11;171;5;174;;;;vpos;;vstring;;r&#10;Definition&#10;    getAddDatetime()&#10;&#10;Description&#10;     Returns the value of field add_datetime;;d4,172;;b1,0;;m">
+</treenode>
+<treenode node="getDefType;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableDefine.php;f11;141;5;144;;;;vpos;;vstring;;r&#10;Definition&#10;    getDefType()&#10;&#10;Description&#10;     Returns the value of field def_type;;d4,142;;b1,0;;m">
+</treenode>
+<treenode node="getDefValue;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableDefine.php;f11;151;5;154;;;;vpos;;vstring;;r&#10;Definition&#10;    getDefValue()&#10;&#10;Description&#10;     Returns the value of field def_value;;d4,152;;b1,0;;m">
+</treenode>
+<treenode node="getDelFlg;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableDefine.php;f11;161;5;164;;;;vpos;;vinteger;;r&#10;Definition&#10;    getDelFlg()&#10;&#10;Description&#10;     Returns the value of field del_flg;;d4,162;;b1,0;;m">
+</treenode>
+<treenode node="getMDefineId;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableDefine.php;f11;131;5;134;;;;vpos;;vinteger;;r&#10;Definition&#10;    getMDefineId()&#10;&#10;Description&#10;     Returns the value of field m_define_id;;d4,132;;b1,0;;m">
+</treenode>
+<treenode node="getSource;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableDefine.php;f11;200;5;203;;;;vpos;;vstring;;r&#10;Definition&#10;    getSource()&#10;&#10;Description&#10;     Returns table name mapped in the model.;;d4,201;;b1,0;;m">
+</treenode>
+<treenode node="getUpdDatetime;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableDefine.php;f11;181;5;184;;;;vpos;;vstring;;r&#10;Definition&#10;    getUpdDatetime()&#10;&#10;Description&#10;     Returns the value of field upd_datetime;;d4,182;;b1,0;;m">
+</treenode>
+<treenode node="initialize;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableDefine.php;f11;189;5;193;;;;vpos;;v;;r&#10;Definition&#10;    initialize()&#10;&#10;Description&#10;     Initialize method for model.;;d4,190;;b1,0;;m">
+</treenode>
+<treenode node="setAddDatetime;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableDefine.php;f11;106;5;111;;;;vpos;;v;;r&#10;Definition&#10;    setAddDatetime($add_datetime)&#10;&#10;Description&#10;     Method to set the value of field add_datetime&#10;&#10;Parameters:&#10;    string $add_datetime;;d4,107;;b1,0;;mstring $add_datetime;;p">
+</treenode>
+<treenode node="setDefType;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableDefine.php;f11;67;5;72;;;;vpos;;v;;r&#10;Definition&#10;    setDefType($def_type)&#10;&#10;Description&#10;     Method to set the value of field def_type&#10;&#10;Parameters:&#10;    string $def_type;;d4,68;;b1,0;;mstring $def_type;;p">
+</treenode>
+<treenode node="setDefValue;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableDefine.php;f11;80;5;85;;;;vpos;;v;;r&#10;Definition&#10;    setDefValue($def_value)&#10;&#10;Description&#10;     Method to set the value of field def_value&#10;&#10;Parameters:&#10;    string $def_value;;d4,81;;b1,0;;mstring $def_value;;p">
+</treenode>
+<treenode node="setDelFlg;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableDefine.php;f11;93;5;98;;;;vpos;;v;;r&#10;Definition&#10;    setDelFlg($del_flg)&#10;&#10;Description&#10;     Method to set the value of field del_flg&#10;&#10;Parameters:&#10;    integer $del_flg;;d4,94;;b1,0;;minteger $del_flg;;p">
+</treenode>
+<treenode node="setMDefineId;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableDefine.php;f11;54;5;59;;;;vpos;;v;;r&#10;Definition&#10;    setMDefineId($m_define_id)&#10;&#10;Description&#10;     Method to set the value of field m_define_id&#10;&#10;Parameters:&#10;    integer $m_define_id;;d4,55;;b1,0;;minteger $m_define_id;;p">
+</treenode>
+<treenode node="setUpdDatetime;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableDefine.php;f11;119;5;124;;;;vpos;;v;;r&#10;Definition&#10;    setUpdDatetime($upd_datetime)&#10;&#10;Description&#10;     Method to set the value of field upd_datetime&#10;&#10;Parameters:&#10;    string $upd_datetime;;d4,120;;b1,0;;mstring $upd_datetime;;p">
+</treenode>
+</treenode>
+<treenode node="TableFriends;PHP:Class Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableFriends.php;f0;2;1;198;;;;vpos;;vModel;;c;;r;;d0,3;;b0,0;;m">
+<treenode node="find;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableFriends.php;f18;182;5;185;;;;vpos;;vMFriends;;r&#10;Definition&#10;    find($parameters = null)&#10;&#10;Description&#10;     Allows to query a set of records that match the specified conditions&#10;&#10;Parameters:&#10;    mixed $parameters&#10;&#10;Return:&#10;   []|MFriends|\Phalcon\Mvc\Model\ResultSetInterface;;d4,183;;b1,5;;mmixed $parameters;;p">
+</treenode>
+<treenode node="findFirst;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableFriends.php;f18;193;5;196;;;;vpos;;vMFriends;;r&#10;Definition&#10;    findFirst($parameters = null)&#10;&#10;Description&#10;     Allows to query the first record that match the specified conditions&#10;&#10;Parameters:&#10;    mixed $parameters&#10;&#10;Return:&#10;   |\Phalcon\Mvc\Model\ResultInterface;;d4,194;;b1,5;;mmixed $parameters;;p">
+</treenode>
+<treenode node="getMFriendsId;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableFriends.php;f11;112;5;115;;;;vpos;;vinteger;;r&#10;Definition&#10;    getMFriendsId()&#10;&#10;Description&#10;     Returns the value of field m_friends_id;;d4,113;;b1,0;;m">
+</treenode>
+<treenode node="getName;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableFriends.php;f11;132;5;135;;;;vpos;;vstring;;r&#10;Definition&#10;    getName()&#10;&#10;Description&#10;     Returns the value of field name;;d4,133;;b1,0;;m">
+</treenode>
+<treenode node="getSource;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableFriends.php;f11;171;5;174;;;;vpos;;vstring;;r&#10;Definition&#10;    getSource()&#10;&#10;Description&#10;     Returns table name mapped in the model.;;d4,172;;b1,0;;m">
+</treenode>
+<treenode node="getStatus;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableFriends.php;f11;142;5;145;;;;vpos;;vinteger;;r&#10;Definition&#10;    getStatus()&#10;&#10;Description&#10;     Returns the value of field status;;d4,143;;b1,0;;m">
+</treenode>
+<treenode node="getUid;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableFriends.php;f11;122;5;125;;;;vpos;;vinteger;;r&#10;Definition&#10;    getUid()&#10;&#10;Description&#10;     Returns the value of field uid;;d4,123;;b1,0;;m">
+</treenode>
+<treenode node="getUpdDatetime;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableFriends.php;f11;152;5;155;;;;vpos;;vstring;;r&#10;Definition&#10;    getUpdDatetime()&#10;&#10;Description&#10;     Returns the value of field upd_datetime;;d4,153;;b1,0;;m">
+</treenode>
+<treenode node="initialize;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableFriends.php;f11;160;5;164;;;;vpos;;v;;r&#10;Definition&#10;    initialize()&#10;&#10;Description&#10;     Initialize method for model.;;d4,161;;b1,0;;m">
+</treenode>
+<treenode node="setMFriendsId;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableFriends.php;f11;48;5;53;;;;vpos;;v;;r&#10;Definition&#10;    setMFriendsId($m_friends_id)&#10;&#10;Description&#10;     Method to set the value of field m_friends_id&#10;&#10;Parameters:&#10;    integer $m_friends_id;;d4,49;;b1,0;;minteger $m_friends_id;;p">
+</treenode>
+<treenode node="setName;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableFriends.php;f11;74;5;79;;;;vpos;;v;;r&#10;Definition&#10;    setName($name)&#10;&#10;Description&#10;     Method to set the value of field name&#10;&#10;Parameters:&#10;    string $name;;d4,75;;b1,0;;mstring $name;;p">
+</treenode>
+<treenode node="setStatus;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableFriends.php;f11;87;5;92;;;;vpos;;v;;r&#10;Definition&#10;    setStatus($status)&#10;&#10;Description&#10;     Method to set the value of field status&#10;&#10;Parameters:&#10;    integer $status;;d4,88;;b1,0;;minteger $status;;p">
+</treenode>
+<treenode node="setUid;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableFriends.php;f11;61;5;66;;;;vpos;;v;;r&#10;Definition&#10;    setUid($uid)&#10;&#10;Description&#10;     Method to set the value of field uid&#10;&#10;Parameters:&#10;    integer $uid;;d4,62;;b1,0;;minteger $uid;;p">
+</treenode>
+<treenode node="setUpdDatetime;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableFriends.php;f11;100;5;105;;;;vpos;;v;;r&#10;Definition&#10;    setUpdDatetime($upd_datetime)&#10;&#10;Description&#10;     Method to set the value of field upd_datetime&#10;&#10;Parameters:&#10;    string $upd_datetime;;d4,101;;b1,0;;mstring $upd_datetime;;p">
+</treenode>
+</treenode>
+<treenode node="TableToken;PHP:Class Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableToken.php;f0;2;1;499;;;;vpos;;vModel;;c;;r;;d0,3;;b0,0;;m">
+<treenode node="find;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableToken.php;f18;483;5;486;;;;vpos;;vMToken;;r&#10;Definition&#10;    find($parameters = null)&#10;&#10;Description&#10;     Allows to query a set of records that match the specified conditions&#10;&#10;Parameters:&#10;    mixed $parameters&#10;&#10;Return:&#10;   []|MToken|\Phalcon\Mvc\Model\ResultSetInterface;;d4,484;;b1,5;;mmixed $parameters;;p">
+</treenode>
+<treenode node="findFirst;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableToken.php;f18;494;5;497;;;;vpos;;vMToken;;r&#10;Definition&#10;    findFirst($parameters = null)&#10;&#10;Description&#10;     Allows to query the first record that match the specified conditions&#10;&#10;Parameters:&#10;    mixed $parameters&#10;&#10;Return:&#10;   |\Phalcon\Mvc\Model\ResultInterface;;d4,495;;b1,5;;mmixed $parameters;;p">
+</treenode>
+<treenode node="getAddDatetime;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableToken.php;f11;443;5;446;;;;vpos;;vstring;;r&#10;Definition&#10;    getAddDatetime()&#10;&#10;Description&#10;     Returns the value of field add_datetime;;d4,444;;b1,0;;m">
+</treenode>
+<treenode node="getCookie;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableToken.php;f11;353;5;356;;;;vpos;;vstring;;r&#10;Definition&#10;    getCookie()&#10;&#10;Description&#10;     Returns the value of field cookie;;d4,354;;b1,0;;m">
+</treenode>
+<treenode node="getDelFlg;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableToken.php;f11;433;5;436;;;;vpos;;vinteger;;r&#10;Definition&#10;    getDelFlg()&#10;&#10;Description&#10;     Returns the value of field del_flg;;d4,434;;b1,0;;m">
+</treenode>
+<treenode node="getFriendsCount;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableToken.php;f11;393;5;396;;;;vpos;;vinteger;;r&#10;Definition&#10;    getFriendsCount()&#10;&#10;Description&#10;     Returns the value of field friends_count;;d4,394;;b1,0;;m">
+</treenode>
+<treenode node="getFullName;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableToken.php;f11;383;5;386;;;;vpos;;vstring;;r&#10;Definition&#10;    getFullName()&#10;&#10;Description&#10;     Returns the value of field full_name;;d4,384;;b1,0;;m">
+</treenode>
+<treenode node="getInfoStatus;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableToken.php;f11;423;5;426;;;;vpos;;vinteger;;r&#10;Definition&#10;    getInfoStatus()&#10;&#10;Description&#10;     Returns the value of field info_status;;d4,424;;b1,0;;m">
+</treenode>
+<treenode node="getLastUseDatetime;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableToken.php;f11;403;5;406;;;;vpos;;vstring;;r&#10;Definition&#10;    getLastUseDatetime()&#10;&#10;Description&#10;     Returns the value of field last_use_datetime;;d4,404;;b1,0;;m">
+</treenode>
+<treenode node="getMTokenId;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableToken.php;f11;313;5;316;;;;vpos;;vinteger;;r&#10;Definition&#10;    getMTokenId()&#10;&#10;Description&#10;     Returns the value of field m_token_id;;d4,314;;b1,0;;m">
+</treenode>
+<treenode node="getPass;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableToken.php;f11;333;5;336;;;;vpos;;vstring;;r&#10;Definition&#10;    getPass()&#10;&#10;Description&#10;     Returns the value of field pass;;d4,334;;b1,0;;m">
+</treenode>
+<treenode node="getSource;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableToken.php;f11;472;5;475;;;;vpos;;vstring;;r&#10;Definition&#10;    getSource()&#10;&#10;Description&#10;     Returns table name mapped in the model.;;d4,473;;b1,0;;m">
+</treenode>
+<treenode node="getToken1;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableToken.php;f11;363;5;366;;;;vpos;;vstring;;r&#10;Definition&#10;    getToken1()&#10;&#10;Description&#10;     Returns the value of field token1;;d4,364;;b1,0;;m">
+</treenode>
+<treenode node="getToken2;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableToken.php;f11;373;5;376;;;;vpos;;vstring;;r&#10;Definition&#10;    getToken2()&#10;&#10;Description&#10;     Returns the value of field token2;;d4,374;;b1,0;;m">
+</treenode>
+<treenode node="getUpdDatetime;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableToken.php;f11;453;5;456;;;;vpos;;vstring;;r&#10;Definition&#10;    getUpdDatetime()&#10;&#10;Description&#10;     Returns the value of field upd_datetime;;d4,454;;b1,0;;m">
+</treenode>
+<treenode node="getUseFlg;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableToken.php;f11;413;5;416;;;;vpos;;vinteger;;r&#10;Definition&#10;    getUseFlg()&#10;&#10;Description&#10;     Returns the value of field use_flg;;d4,414;;b1,0;;m">
+</treenode>
+<treenode node="getUser;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableToken.php;f11;323;5;326;;;;vpos;;vstring;;r&#10;Definition&#10;    getUser()&#10;&#10;Description&#10;     Returns the value of field user;;d4,324;;b1,0;;m">
+</treenode>
+<treenode node="getUserId;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableToken.php;f11;343;5;346;;;;vpos;;vinteger;;r&#10;Definition&#10;    getUserId()&#10;&#10;Description&#10;     Returns the value of field user_id;;d4,344;;b1,0;;m">
+</treenode>
+<treenode node="initialize;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableToken.php;f11;461;5;465;;;;vpos;;v;;r&#10;Definition&#10;    initialize()&#10;&#10;Description&#10;     Initialize method for model.;;d4,462;;b1,0;;m">
+</treenode>
+<treenode node="setAddDatetime;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableToken.php;f11;288;5;293;;;;vpos;;v;;r&#10;Definition&#10;    setAddDatetime($add_datetime)&#10;&#10;Description&#10;     Method to set the value of field add_datetime&#10;&#10;Parameters:&#10;    string $add_datetime;;d4,289;;b1,0;;mstring $add_datetime;;p">
+</treenode>
+<treenode node="setCookie;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableToken.php;f11;171;5;176;;;;vpos;;v;;r&#10;Definition&#10;    setCookie($cookie)&#10;&#10;Description&#10;     Method to set the value of field cookie&#10;&#10;Parameters:&#10;    string $cookie;;d4,172;;b1,0;;mstring $cookie;;p">
+</treenode>
+<treenode node="setDelFlg;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableToken.php;f11;275;5;280;;;;vpos;;v;;r&#10;Definition&#10;    setDelFlg($del_flg)&#10;&#10;Description&#10;     Method to set the value of field del_flg&#10;&#10;Parameters:&#10;    integer $del_flg;;d4,276;;b1,0;;minteger $del_flg;;p">
+</treenode>
+<treenode node="setFriendsCount;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableToken.php;f11;223;5;228;;;;vpos;;v;;r&#10;Definition&#10;    setFriendsCount($friends_count)&#10;&#10;Description&#10;     Method to set the value of field friends_count&#10;&#10;Parameters:&#10;    integer $friends_count;;d4,224;;b1,0;;minteger $friends_count;;p">
+</treenode>
+<treenode node="setFullName;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableToken.php;f11;210;5;215;;;;vpos;;v;;r&#10;Definition&#10;    setFullName($full_name)&#10;&#10;Description&#10;     Method to set the value of field full_name&#10;&#10;Parameters:&#10;    string $full_name;;d4,211;;b1,0;;mstring $full_name;;p">
+</treenode>
+<treenode node="setInfoStatus;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableToken.php;f11;262;5;267;;;;vpos;;v;;r&#10;Definition&#10;    setInfoStatus($info_status)&#10;&#10;Description&#10;     Method to set the value of field info_status&#10;&#10;Parameters:&#10;    integer $info_status;;d4,263;;b1,0;;minteger $info_status;;p">
+</treenode>
+<treenode node="setLastUseDatetime;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableToken.php;f11;236;5;241;;;;vpos;;v;;r&#10;Definition&#10;    setLastUseDatetime($last_use_datetime)&#10;&#10;Description&#10;     Method to set the value of field last_use_datetime&#10;&#10;Parameters:&#10;    string $last_use_datetime;;d4,237;;b1,0;;mstring $last_use_datetime;;p">
+</treenode>
+<treenode node="setMTokenId;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableToken.php;f11;119;5;124;;;;vpos;;v;;r&#10;Definition&#10;    setMTokenId($m_token_id)&#10;&#10;Description&#10;     Method to set the value of field m_token_id&#10;&#10;Parameters:&#10;    integer $m_token_id;;d4,120;;b1,0;;minteger $m_token_id;;p">
+</treenode>
+<treenode node="setPass;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableToken.php;f11;145;5;150;;;;vpos;;v;;r&#10;Definition&#10;    setPass($pass)&#10;&#10;Description&#10;     Method to set the value of field pass&#10;&#10;Parameters:&#10;    string $pass;;d4,146;;b1,0;;mstring $pass;;p">
+</treenode>
+<treenode node="setToken1;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableToken.php;f11;184;5;189;;;;vpos;;v;;r&#10;Definition&#10;    setToken1($token1)&#10;&#10;Description&#10;     Method to set the value of field token1&#10;&#10;Parameters:&#10;    string $token1;;d4,185;;b1,0;;mstring $token1;;p">
+</treenode>
+<treenode node="setToken2;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableToken.php;f11;197;5;202;;;;vpos;;v;;r&#10;Definition&#10;    setToken2($token2)&#10;&#10;Description&#10;     Method to set the value of field token2&#10;&#10;Parameters:&#10;    string $token2;;d4,198;;b1,0;;mstring $token2;;p">
+</treenode>
+<treenode node="setUpdDatetime;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableToken.php;f11;301;5;306;;;;vpos;;v;;r&#10;Definition&#10;    setUpdDatetime($upd_datetime)&#10;&#10;Description&#10;     Method to set the value of field upd_datetime&#10;&#10;Parameters:&#10;    string $upd_datetime;;d4,302;;b1,0;;mstring $upd_datetime;;p">
+</treenode>
+<treenode node="setUseFlg;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableToken.php;f11;249;5;254;;;;vpos;;v;;r&#10;Definition&#10;    setUseFlg($use_flg)&#10;&#10;Description&#10;     Method to set the value of field use_flg&#10;&#10;Parameters:&#10;    integer $use_flg;;d4,250;;b1,0;;minteger $use_flg;;p">
+</treenode>
+<treenode node="setUser;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableToken.php;f11;132;5;137;;;;vpos;;v;;r&#10;Definition&#10;    setUser($user)&#10;&#10;Description&#10;     Method to set the value of field user&#10;&#10;Parameters:&#10;    string $user;;d4,133;;b1,0;;mstring $user;;p">
+</treenode>
+<treenode node="setUserId;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableToken.php;f11;158;5;163;;;;vpos;;v;;r&#10;Definition&#10;    setUserId($user_id)&#10;&#10;Description&#10;     Method to set the value of field user_id&#10;&#10;Parameters:&#10;    integer $user_id;;d4,159;;b1,0;;minteger $user_id;;p">
+</treenode>
+</treenode>
+<treenode node="TableUser;PHP:Class Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableUser.php;f0;2;1;257;;;;vpos;;vModel;;c;;r;;d0,3;;b0,0;;m">
+<treenode node="find;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableUser.php;f18;241;5;244;;;;vpos;;vMUser;;r&#10;Definition&#10;    find($parameters = null)&#10;&#10;Description&#10;     Allows to query a set of records that match the specified conditions&#10;&#10;Parameters:&#10;    mixed $parameters&#10;&#10;Return:&#10;   []|MUser|\Phalcon\Mvc\Model\ResultSetInterface;;d4,242;;b1,5;;mmixed $parameters;;p">
+</treenode>
+<treenode node="findFirst;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableUser.php;f18;252;5;255;;;;vpos;;vMUser;;r&#10;Definition&#10;    findFirst($parameters = null)&#10;&#10;Description&#10;     Allows to query the first record that match the specified conditions&#10;&#10;Parameters:&#10;    mixed $parameters&#10;&#10;Return:&#10;   |\Phalcon\Mvc\Model\ResultInterface;;d4,253;;b1,5;;mmixed $parameters;;p">
+</treenode>
+<treenode node="getAddDatetime;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableUser.php;f11;201;5;204;;;;vpos;;vstring;;r&#10;Definition&#10;    getAddDatetime()&#10;&#10;Description&#10;     Returns the value of field add_datetime;;d4,202;;b1,0;;m">
+</treenode>
+<treenode node="getDelFlg;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableUser.php;f11;191;5;194;;;;vpos;;vinteger;;r&#10;Definition&#10;    getDelFlg()&#10;&#10;Description&#10;     Returns the value of field del_flg;;d4,192;;b1,0;;m">
+</treenode>
+<treenode node="getMUserId;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableUser.php;f11;151;5;154;;;;vpos;;vinteger;;r&#10;Definition&#10;    getMUserId()&#10;&#10;Description&#10;     Returns the value of field m_user_id;;d4,152;;b1,0;;m">
+</treenode>
+<treenode node="getPass;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableUser.php;f11;181;5;184;;;;vpos;;vstring;;r&#10;Definition&#10;    getPass()&#10;&#10;Description&#10;     Returns the value of field pass;;d4,182;;b1,0;;m">
+</treenode>
+<treenode node="getSource;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableUser.php;f11;230;5;233;;;;vpos;;vstring;;r&#10;Definition&#10;    getSource()&#10;&#10;Description&#10;     Returns table name mapped in the model.;;d4,231;;b1,0;;m">
+</treenode>
+<treenode node="getUpdDatetime;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableUser.php;f11;211;5;214;;;;vpos;;vstring;;r&#10;Definition&#10;    getUpdDatetime()&#10;&#10;Description&#10;     Returns the value of field upd_datetime;;d4,212;;b1,0;;m">
+</treenode>
+<treenode node="getUserId;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableUser.php;f11;161;5;164;;;;vpos;;vstring;;r&#10;Definition&#10;    getUserId()&#10;&#10;Description&#10;     Returns the value of field user_id;;d4,162;;b1,0;;m">
+</treenode>
+<treenode node="getUserName;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableUser.php;f11;171;5;174;;;;vpos;;vstring;;r&#10;Definition&#10;    getUserName()&#10;&#10;Description&#10;     Returns the value of field user_name;;d4,172;;b1,0;;m">
+</treenode>
+<treenode node="initialize;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableUser.php;f11;219;5;223;;;;vpos;;v;;r&#10;Definition&#10;    initialize()&#10;&#10;Description&#10;     Initialize method for model.;;d4,220;;b1,0;;m">
+</treenode>
+<treenode node="setAddDatetime;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableUser.php;f11;126;5;131;;;;vpos;;v;;r&#10;Definition&#10;    setAddDatetime($add_datetime)&#10;&#10;Description&#10;     Method to set the value of field add_datetime&#10;&#10;Parameters:&#10;    string $add_datetime;;d4,127;;b1,0;;mstring $add_datetime;;p">
+</treenode>
+<treenode node="setDelFlg;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableUser.php;f11;113;5;118;;;;vpos;;v;;r&#10;Definition&#10;    setDelFlg($del_flg)&#10;&#10;Description&#10;     Method to set the value of field del_flg&#10;&#10;Parameters:&#10;    integer $del_flg;;d4,114;;b1,0;;minteger $del_flg;;p">
+</treenode>
+<treenode node="setMUserId;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableUser.php;f11;61;5;66;;;;vpos;;v;;r&#10;Definition&#10;    setMUserId($m_user_id)&#10;&#10;Description&#10;     Method to set the value of field m_user_id&#10;&#10;Parameters:&#10;    integer $m_user_id;;d4,62;;b1,0;;minteger $m_user_id;;p">
+</treenode>
+<treenode node="setPass;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableUser.php;f11;100;5;105;;;;vpos;;v;;r&#10;Definition&#10;    setPass($pass)&#10;&#10;Description&#10;     Method to set the value of field pass&#10;&#10;Parameters:&#10;    string $pass;;d4,101;;b1,0;;mstring $pass;;p">
+</treenode>
+<treenode node="setUpdDatetime;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableUser.php;f11;139;5;144;;;;vpos;;v;;r&#10;Definition&#10;    setUpdDatetime($upd_datetime)&#10;&#10;Description&#10;     Method to set the value of field upd_datetime&#10;&#10;Parameters:&#10;    string $upd_datetime;;d4,140;;b1,0;;mstring $upd_datetime;;p">
+</treenode>
+<treenode node="setUserId;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableUser.php;f11;74;5;79;;;;vpos;;v;;r&#10;Definition&#10;    setUserId($user_id)&#10;&#10;Description&#10;     Method to set the value of field user_id&#10;&#10;Parameters:&#10;    string $user_id;;d4,75;;b1,0;;mstring $user_id;;p">
+</treenode>
+<treenode node="setUserName;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableUser.php;f11;87;5;92;;;;vpos;;v;;r&#10;Definition&#10;    setUserName($user_name)&#10;&#10;Description&#10;     Method to set the value of field user_name&#10;&#10;Parameters:&#10;    string $user_name;;d4,88;;b1,0;;mstring $user_name;;p">
+</treenode>
+</treenode>
+<treenode node="TableUserConfig;PHP:Class Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableUserConfig.php;f0;2;1;197;;;;vpos;;vModel;;c;;r;;d0,3;;b0,0;;m">
+<treenode node="find;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableUserConfig.php;f18;181;5;184;;;;vpos;;vMUserConfig;;r&#10;Definition&#10;    find($parameters = null)&#10;&#10;Description&#10;     Allows to query a set of records that match the specified conditions&#10;&#10;Parameters:&#10;    mixed $parameters&#10;&#10;Return:&#10;   []|MUserConfig|\Phalcon\Mvc\Model\ResultSetInterface;;d4,182;;b1,5;;mmixed $parameters;;p">
+</treenode>
+<treenode node="findFirst;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableUserConfig.php;f18;192;5;195;;;;vpos;;vMUserConfig;;r&#10;Definition&#10;    findFirst($parameters = null)&#10;&#10;Description&#10;     Allows to query the first record that match the specified conditions&#10;&#10;Parameters:&#10;    mixed $parameters&#10;&#10;Return:&#10;   |\Phalcon\Mvc\Model\ResultInterface;;d4,193;;b1,5;;mmixed $parameters;;p">
+</treenode>
+<treenode node="getAddDatetime;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableUserConfig.php;f11;141;5;144;;;;vpos;;vstring;;r&#10;Definition&#10;    getAddDatetime()&#10;&#10;Description&#10;     Returns the value of field add_datetime;;d4,142;;b1,0;;m">
+</treenode>
+<treenode node="getDelFlg;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableUserConfig.php;f11;131;5;134;;;;vpos;;vinteger;;r&#10;Definition&#10;    getDelFlg()&#10;&#10;Description&#10;     Returns the value of field del_flg;;d4,132;;b1,0;;m">
+</treenode>
+<treenode node="getMUserConfigId;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableUserConfig.php;f11;111;5;114;;;;vpos;;vinteger;;r&#10;Definition&#10;    getMUserConfigId()&#10;&#10;Description&#10;     Returns the value of field m_user_config_id;;d4,112;;b1,0;;m">
+</treenode>
+<treenode node="getMUserId;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableUserConfig.php;f11;121;5;124;;;;vpos;;vinteger;;r&#10;Definition&#10;    getMUserId()&#10;&#10;Description&#10;     Returns the value of field m_user_id;;d4,122;;b1,0;;m">
+</treenode>
+<treenode node="getSource;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableUserConfig.php;f11;170;5;173;;;;vpos;;vstring;;r&#10;Definition&#10;    getSource()&#10;&#10;Description&#10;     Returns table name mapped in the model.;;d4,171;;b1,0;;m">
+</treenode>
+<treenode node="getUpdDatetime;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableUserConfig.php;f11;151;5;154;;;;vpos;;vstring;;r&#10;Definition&#10;    getUpdDatetime()&#10;&#10;Description&#10;     Returns the value of field upd_datetime;;d4,152;;b1,0;;m">
+</treenode>
+<treenode node="initialize;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableUserConfig.php;f11;159;5;163;;;;vpos;;v;;r&#10;Definition&#10;    initialize()&#10;&#10;Description&#10;     Initialize method for model.;;d4,160;;b1,0;;m">
+</treenode>
+<treenode node="setAddDatetime;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableUserConfig.php;f11;86;5;91;;;;vpos;;v;;r&#10;Definition&#10;    setAddDatetime($add_datetime)&#10;&#10;Description&#10;     Method to set the value of field add_datetime&#10;&#10;Parameters:&#10;    string $add_datetime;;d4,87;;b1,0;;mstring $add_datetime;;p">
+</treenode>
+<treenode node="setDelFlg;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableUserConfig.php;f11;73;5;78;;;;vpos;;v;;r&#10;Definition&#10;    setDelFlg($del_flg)&#10;&#10;Description&#10;     Method to set the value of field del_flg&#10;&#10;Parameters:&#10;    integer $del_flg;;d4,74;;b1,0;;minteger $del_flg;;p">
+</treenode>
+<treenode node="setMUserConfigId;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableUserConfig.php;f11;47;5;52;;;;vpos;;v;;r&#10;Definition&#10;    setMUserConfigId($m_user_config_id)&#10;&#10;Description&#10;     Method to set the value of field m_user_config_id&#10;&#10;Parameters:&#10;    integer $m_user_config_id;;d4,48;;b1,0;;minteger $m_user_config_id;;p">
+</treenode>
+<treenode node="setMUserId;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableUserConfig.php;f11;60;5;65;;;;vpos;;v;;r&#10;Definition&#10;    setMUserId($m_user_id)&#10;&#10;Description&#10;     Method to set the value of field m_user_id&#10;&#10;Parameters:&#10;    integer $m_user_id;;d4,61;;b1,0;;minteger $m_user_id;;p">
+</treenode>
+<treenode node="setUpdDatetime;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableUserConfig.php;f11;99;5;104;;;;vpos;;v;;r&#10;Definition&#10;    setUpdDatetime($upd_datetime)&#10;&#10;Description&#10;     Method to set the value of field upd_datetime&#10;&#10;Parameters:&#10;    string $upd_datetime;;d4,100;;b1,0;;mstring $upd_datetime;;p">
+</treenode>
+</treenode>
+<treenode node="Token;PHP:Class Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\Token.php;f0;2;1;90;;;;vpos;;vModelBase;;c;;r;;d0,3;;b0,0;;m">
+<treenode node="getTokenById;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\Token.php;f11;26;5;47;;;;vpos;;v;;r;;d4,27;;b1,0;;mid;;p">
+</treenode>
+<treenode node="getTokenList;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\Token.php;f11;4;5;24;;;;vpos;;v;;r;;d4,5;;b1,0;;m">
+</treenode>
+<treenode node="run_get_token;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\Token.php;f11;49;5;88;;;;vpos;;v;;r;;d48,49;;b1,0;;memail;;ppass;;p">
+</treenode>
+</treenode>
+<treenode node="TokenController;PHP:Class Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\controllers\TokenController.php;f0;2;1;56;;;;vpos;;vControllerBase;;c;;r;;d0,3;;b0,0;;m">
+<treenode node="getTokenAction;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\controllers\TokenController.php;f11;5;5;20;;;;vpos;;v;;r;;d4,6;;b1,0;;m">
+</treenode>
+<treenode node="getTokenMultiAction;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\controllers\TokenController.php;f11;22;5;54;;;;vpos;;v;;r;;d4,23;;b1,0;;m">
+</treenode>
+</treenode>
+<treenode node="TokenInfoController;PHP:Class Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\controllers\TokenInfoController.php;f0;2;1;20;;;;vpos;;vControllerBase;;c;;r;;d0,3;;b0,0;;m">
+<treenode node="indexAction;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\controllers\TokenInfoController.php;f11;5;5;18;;;;vpos;;v;;r;;d4,6;;b1,0;;m">
+</treenode>
+</treenode>
+<treenode node="User;PHP:Class Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\User.php;f0;2;1;25;;;;vpos;;vModelBase;;c;;r;;d0,3;;b0,0;;m">
+<treenode node="checkLoginData;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\User.php;f11;5;5;23;;;;vpos;;v;;r;;d4,6;;b1,0;;mparams;;p">
+</treenode>
+</treenode>
+<treenode node="auto;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\library\sample_token\full.php;f0;94;1;105;;;;vpos;;v;;r;;d20,94;;b0,0;;murl;;p">
+</treenode>
+<treenode node="cURL;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\library\sample_token\iphone.php;f0;26;1;49;;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\library\sample_token\ios.php;f0;35;1;58;;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\library\sample_token\htc.php;f0;20;1;35;;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\library\sample_token\android.php;f0;22;1;49;;;;vpos;;v;;r;;d51,26;;b0,0;;mmethod;;purl;;pdata;;p">
+</treenode>
+<treenode node="sign_creator;PHP:Function Name;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\library\sample_token\iphone.php;f0;17;1;25;;C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\library\sample_token\android.php;f0;13;1;21;;;;vpos;;v;;r;;d29,17;;b0,0;;mdata;;p">
+</treenode>
+</phptree>
+</codestructure>

@@ -1,0 +1,17 @@
+<?php echo $this->tag->getDocType();?>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Phalcon PHP Framework</title>
+    <?php $this->assets->outputCss() ?>
+    <?php $this->assets->outputJs(); ?>
+</head>
+<body>
+<div id="container">
+    <?php echo $this->getContent(); ?>
+</div>
+<?php $this->partial("shared/base_ajax");?>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\phalcon.clpprj">
+	<settings><PM_URL><![CDATA[http://127.0.0.1/Facebook_Tools/]]></PM_URL><PM_HOME_URL><![CDATA[http://127.0.0.1/Facebook_Tools/]]></PM_HOME_URL><PM_LIBS><![CDATA[]]></PM_LIBS><PM_FTP_CONNECTION><![CDATA[]]></PM_FTP_CONNECTION><PM_FTP_DIR><![CDATA[]]></PM_FTP_DIR><PM_FTP_UPLOAD_ON_SAVE><![CDATA[INT:0]]></PM_FTP_UPLOAD_ON_SAVE></settings><removed value=";"/><added value=""/><lastopfiles>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\controllers\LoginController.php"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\User.php"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableUser.php"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\config\services.php"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\config\define.ini"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\views\shared\base_ajax.phtml"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\Token.php"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\controllers\TokenController.php"/>
+	</lastopfiles>
+	<errors version="5.11">
+	</errors>
+	<todoblock>
+		<todofile name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\public\js\wizard\jquery.steps.js">
+			<todo name="TODO: Validate step object" pos="5;542"/>
+		</todofile>
+	</todoblock>
+	<filescache>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\public\js\wizard\modernizr-2.6.2.min.js" crc="1410622838"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\public\js\wizard\jquery.steps.js" crc="1410677532"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\public\js\wizard\jquery.cookie-1.3.1.js" crc="1410677536"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\public\js\jquery.prettyPhoto.js" crc="1404317084"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\public\js\jquery.mixitup.min.js" crc="1410759102"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\public\js\jquery.metisMenu.js" crc="1410617948"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\public\js\jquery-1.10.2.js" crc="1410617948"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\public\js\galleryCustom.js" crc="1410762382"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\public\js\custom.js" crc="1410761978"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\public\js\bootstrap.js" crc="1410617948"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\public\js\bootstrap-fileupload.js" crc="1410710564"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\public\css\wizard\wizardMain.css" crc="1410677594"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\public\css\wizard\normalize.css" crc="1410677600"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\public\css\wizard\jquery.steps.css" crc="1410677590"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\public\css\pricing.css" crc="1410761086"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\public\css\prettyPhoto.css" crc="1404317082"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\public\css\invoice.css" crc="1410761078"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\public\css\font-awesome.css" crc="1410617948"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\public\css\error.css" crc="1410761072"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\public\css\custom.css" crc="1410761536"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\public\css\bootstrap.css" crc="1410617948"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\public\css\bootstrap-social.css" crc="1410697578"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\public\css\bootstrap-fileupload.min.css" crc="1410710550"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\public\css\basic.css" crc="1410758038"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\public\index.php" crc="1508335414"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\public\.htaccess" crc="1507476623"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\db\db_2017_10_12.sql" crc="1507820607"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\cache\c__program files (x86)_ampps_www_facebook_tools_app_views_tokeninfo_index.phtml.php" crc="1508600155"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\cache\c__program files (x86)_ampps_www_facebook_tools_app_views_token_index.phtml.php" crc="1508600154"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\cache\c__program files (x86)_ampps_www_facebook_tools_app_views_shared_base_ajax.phtml.php" crc="1508603441"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\cache\c__program files (x86)_ampps_www_facebook_tools_app_views_profiles_index.phtml.php" crc="1508600157"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\cache\c__program files (x86)_ampps_www_facebook_tools_app_views_postfeed_index.phtml.php" crc="1508600157"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\cache\c__program files (x86)_ampps_www_facebook_tools_app_views_login_index.phtml.php" crc="1508593693"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\cache\c__program files (x86)_ampps_www_facebook_tools_app_views_layouts_tokeninfo.phtml.php" crc="1508600155"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\cache\c__program files (x86)_ampps_www_facebook_tools_app_views_layouts_token.phtml.php" crc="1508600154"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\cache\c__program files (x86)_ampps_www_facebook_tools_app_views_layouts_profiles.phtml.php" crc="1508600157"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\cache\c__program files (x86)_ampps_www_facebook_tools_app_views_layouts_postfeed.phtml.php" crc="1508600157"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\cache\c__program files (x86)_ampps_www_facebook_tools_app_views_layouts_login.phtml.php" crc="1508593693"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\cache\c__program files (x86)_ampps_www_facebook_tools_app_views_layouts_index.phtml.php" crc="1508591305"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\cache\c__program files (x86)_ampps_www_facebook_tools_app_views_layouts_getuid.phtml.php" crc="1508600156"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\cache\c__program files (x86)_ampps_www_facebook_tools_app_views_layouts_friends.phtml.php" crc="1508600156"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\cache\c__program files (x86)_ampps_www_facebook_tools_app_views_index_index.phtml.php" crc="1508591305"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\cache\c__program files (x86)_ampps_www_facebook_tools_app_views_index.phtml.php" crc="1508591305"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\cache\c__program files (x86)_ampps_www_facebook_tools_app_views_getuid_index.phtml.php" crc="1508600156"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\cache\c__program files (x86)_ampps_www_facebook_tools_app_views_friends_index.phtml.php" crc="1508682838"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\views\tokeninfo\index.phtml" crc="1508255330"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\views\token\index.phtml" crc="1508681884"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\views\shared\base_ajax.phtml" crc="1508602171"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\views\profiles\index.phtml" crc="1508589147"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\views\postfeed\index.phtml" crc="1508588912"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\views\login\index.phtml" crc="1508080901"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\views\layouts\tokeninfo.phtml" crc="1507479805"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\views\layouts\token.phtml" crc="1507479805"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\views\layouts\profiles.phtml" crc="1507479805"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\views\layouts\postfeed.phtml" crc="1507479805"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\views\layouts\login.phtml" crc="1507991555"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\views\layouts\index.phtml" crc="1507902555"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\views\layouts\getuid.phtml" crc="1507479805"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\views\layouts\friends.phtml" crc="1507479805"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\views\index\index.phtml" crc="1507902180"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\views\getuid\index.phtml" crc="1508255330"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\views\friends\index.phtml" crc="1508682836"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\views\index.phtml" crc="1508581083"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableUserConfig.php" crc="1508600840"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableUser.php" crc="1508600840"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableToken.php" crc="1508600840"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableFriends.php" crc="1508600840"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\database\TableDefine.php" crc="1508600840"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\User.php" crc="1508649295"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\Token.php" crc="1508683391"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\ModelBase.php" crc="1508683391"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\HiddenBatch.php" crc="1508662436"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\models\Friend.php" crc="1508662436"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\library\sample_token\iphone.php" crc="1489915738"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\library\sample_token\ios.php" crc="1489915732"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\library\sample_token\index_1.php" crc="1489916056"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\library\sample_token\htc.php" crc="1485111268"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\library\sample_token\full.php" crc="1489914222"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\library\sample_token\android.php" crc="1489955834"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\library\pagetoken.php" crc="1508084644"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\library\iphonetoken.php" crc="1508084644"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\library\curlpost.php" crc="1508084644"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\controllers\TokenInfoController.php" crc="1508591888"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\controllers\TokenController.php" crc="1508681884"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\controllers\ProfilesController.php" crc="1508664320"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\controllers\PostFeedController.php" crc="1508664320"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\controllers\LoginController.php" crc="1508664320"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\controllers\IndexController.php" crc="1508591888"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\controllers\GetUidController.php" crc="1508591888"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\controllers\FriendsController.php" crc="1508683391"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\controllers\ControllerBase.php" crc="1508683391"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\controllers\BatchAddFriendController.php" crc="1508683414"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\config\services.php" crc="1508600965"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\config\router.php" crc="1507476623"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\config\loader.php" crc="1508081880"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\config\define.ini" crc="1508663527"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\app\config\config.php" crc="1508594002"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\.idea\workspace.xml" crc="1508683477"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\.idea\vcs.xml" crc="1507477355"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\.idea\modules.xml" crc="1507477342"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\index.html" crc="1507476623"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\.htrouter.php" crc="1507476623"/>
+		<file name="C:\Program Files (x86)\Ampps\www\Facebook_Tools\.htaccess" crc="1507476623"/>
+	</filescache>
+</project>
