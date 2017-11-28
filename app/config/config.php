@@ -10,10 +10,10 @@ return new \Phalcon\Config([
     'login_user_id' => '',
     'database' => [
         'adapter'     => 'Mysql',
-        'host'        => 'localhost',
+        'host'        => 'mintywatch.shop',
         'username'    => 'root',
-        'password'    => '123456',
-        'dbname'      => 'fbtest',
+        'password'    => 'pass5510453',
+        'dbname'      => 'toolkits',
         'charset'     => 'utf8',
     ],
     'application' => [
