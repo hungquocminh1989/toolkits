@@ -5,6 +5,49 @@ use Phalcon\Logger\Adapter\File as FileAdapter;
 
 class ControllerBase extends Controller
 {
+	
+	/**
+	* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+	* Start Sample Function
+	*/
+	public function sampleAction()
+    {
+        //Ajax response
+	    $this->view->disable();
+	    
+	    $arrResponse = array(
+                        'status' => 'NG',
+                        'result' => '',
+                        'error_msg' => ''
+        );
+        
+        try{
+
+            $params = $this->request->getPost();
+            
+            //...
+            if(TRUE){
+                //..
+                $arrResponse['status'] = '';
+                $arrResponse['result'] = $this->url->get('index');
+            }
+            else{
+				$arrResponse['status'] = 'NG';
+                $arrResponse['error_msg'] = 'error';
+			}
+			
+			return json_encode($arrResponse);
+        }
+        catch (Exception $ex) {
+        	$arrResponse['error_msg'] = 'error Exception';
+            return json_encode($arrResponse);
+        }
+    }
+    /**
+	* End Sample Function
+	* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+	*/
+	
     public function onConstruct()
     {
 		//echo 1111;die();

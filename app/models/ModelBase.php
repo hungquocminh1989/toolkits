@@ -1,7 +1,56 @@
 <?php
+use Phalcon\Mvc\Model;
+use Phalcon\Logger\Adapter\File as FileAdapter;
 
-class ModelBase extends \Phalcon\Mvc\Model
+class ModelBase extends Model
 {
+	/**
+	* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+	* Start Sample function
+	*/
+	public function sampleQuery()
+    {
+    	//Select một dòng và trả ra 1 column duy nhất
+        try
+        {
+            $record = TableUser::find(
+                [
+                    'pass = :passwd: AND user_id = :user_id: ',
+                    'bind' => $params,
+                ]
+            );
+            if($record != NULL && count($record) == 1){
+                return $record->getFirst()->getMUserId();
+            }
+            return FALSE;
+        }
+        catch (Exception $ex){
+            return FALSE;
+        }
+        
+        //Select nhiều dòng trả ra Array
+        try
+        {
+            $record = TableUser::find(
+                [
+                    'pass = :passwd: AND user_id = :user_id: ',
+                    'bind' => $params,
+                ]
+            );
+            if($record != NULL && count($record) > 0){
+                return $record->toArray();
+            }
+            return NULL;
+        }
+        catch (Exception $ex){
+            return NULL;
+        }
+    }
+    /**
+	* End Sample function
+	* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+	*/
+	
     public function sqlQuery($sql,$param = [])
     {
         try
