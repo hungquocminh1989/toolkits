@@ -1,6 +1,6 @@
 <?php
 
-class pagetoken
+class pagetoken extends ModelBase
 {
 	public function get_token($user, $pass){
 		$token = array();
@@ -13,7 +13,7 @@ class pagetoken
 
 		//Login
 		$cnf['login'] = 'Login';
-		$random = $this->application->tmpDir . "/" . md5(rand(00000000,99999999)).'.txt';
+		$random = $this->getConfig()->application->tmpDir . md5(rand(00000000,99999999)).'.txt';
 		$login = $this->cURL('https://m.facebook.com/login.php', $random, $cnf);
 		
 		$cookie = $this->getCookie($random);
