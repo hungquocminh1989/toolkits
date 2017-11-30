@@ -72,6 +72,7 @@ class Token extends ModelBase
                     $sql_arr['token1'] = $arr[5];
                     $sql_arr['token2'] = $arr[6];
                     $sql_arr['full_name'] = $info['name'];
+                    $sql_arr['m_user_id'] = $this->getSession()->get($this->getDefine()->SESSION->SESS_LOGIN_USER);
                     
                     $rowInsert = new TableToken();
                     $rowInsert->save($sql_arr);

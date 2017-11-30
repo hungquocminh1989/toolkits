@@ -19,10 +19,10 @@
                                 <select class="form-control" id="account_select" name="account_select">
                                     <option value="">Tất cả</option>
                                     {% if list != null %}
-                                        {% for index,item in list %}
-                                            <option value="{{item.id}}">{{item.user_id}} - {{item.full_name}}</option>
-                                        {% endfor  %}
-                                    {% endif  %}
+                                        {% for item in list %}
+                                            <option value="{{item['m_token_id']}}">{{item['user_id']}} - {{item['full_name']}}</option>
+                                        {% endfor %}
+                                    {% endif %}
                                 </select>
                             </div>
                             <div class="form-group">
@@ -48,10 +48,10 @@
                                     <option value="-1"></option>
                                     <option value="">Tất cả</option>
                                     {% if list != null %}
-                                        {% for index,item in list %}
-                                            <option value="{{item.id}}">{{item.user_id}} - {{item.full_name}}</option>
-                                        {% endfor  %}
-                                    {% endif  %}
+                                        {% for item in list %}
+                                            <option value="{{item['m_token_id']}}">{{item['user_id']}} - {{item['full_name']}}</option>
+                                        {% endfor %}
+                                    {% endif %}
                                 </select>
                             </div>
                             <div class="form-group">

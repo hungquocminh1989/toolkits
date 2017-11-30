@@ -8,54 +8,72 @@ class ProfilesController extends ControllerBase
         $modelToken = new Token();
         $res = $modelToken->getTokenList();
 
-        $return['list'] = $res;
+        $this->view->setVar('list',$res);
     }
 
     public function updatePictureAction()
     {
-        //Ajax response
-        $this->view->disable();
+    	//Ajax response
+	    $this->view->disable();
+	    
+	    $arrResponse = array(
+                        'status' => 'NG',
+                        'result' => '',
+                        'error_msg' => ''
+        );
+        
         try{
+
             $params = $this->request->getPost();
             $this->update_photo_profile($params,TRUE);
-
-            return json_encode(
-                array(
-                    'status' => 'OK',
-                    'error_msg' => ''
-                )
-            );
-        } catch (Exception $ex) {
-            return json_encode(
-                array(
-                    'status' => 'NG',
-                    'error_msg' => $ex->getMessage()
-                )
-            );
+            
+            if(TRUE){
+                //..
+                $arrResponse['status'] = 'OK';
+            }
+            else{
+				$arrResponse['status'] = 'NG';
+                $arrResponse['error_msg'] = 'error';
+			}
+			
+			return json_encode($arrResponse);
+        }
+        catch (Exception $ex) {
+        	$arrResponse['error_msg'] = 'error Exception';
+            return json_encode($arrResponse);
         }
     }
 
     public function updateCoverAction()
     {
-        //Ajax response
-        $this->view->disable();
+    	//Ajax response
+	    $this->view->disable();
+	    
+	    $arrResponse = array(
+                        'status' => 'NG',
+                        'result' => '',
+                        'error_msg' => ''
+        );
+        
         try{
+
             $params = $this->request->getPost();
             $this->update_photo_profile($params,FALSE);
-
-            return json_encode(
-                array(
-                    'status' => 'OK',
-                    'error_msg' => ''
-                )
-            );
-        } catch (Exception $ex) {
-            return json_encode(
-                array(
-                    'status' => 'NG',
-                    'error_msg' => $ex->getMessage()
-                )
-            );
+            
+            if(TRUE){
+                //..
+                $arrResponse['status'] = 'OK';
+            }
+            else{
+				$arrResponse['status'] = 'NG';
+                $arrResponse['error_msg'] = 'error';
+			}
+			
+			return json_encode($arrResponse);
+        }
+        catch (Exception $ex) {
+        	$arrResponse['error_msg'] = 'error Exception';
+            return json_encode($arrResponse);
         }
     }
 

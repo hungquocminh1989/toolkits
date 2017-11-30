@@ -19,7 +19,7 @@ class FriendsController extends ControllerBase
         $this->view->setVar('list',$result['list']);
     }
 
-    public function importUidAction()
+    public function importuidAction()
     {
         //Ajax response
         $this->view->disable();
@@ -61,7 +61,7 @@ class FriendsController extends ControllerBase
             );
         }
     }
-    public function execFriendsRequestAction()
+    public function execfriendsrequestAction()
     {
         //Ajax response
         $this->view->disable();
