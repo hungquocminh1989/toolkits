@@ -45,6 +45,24 @@ class ModelBase extends Model
         catch (Exception $ex){
             return NULL;
         }
+        
+        //Select nhiều dòng trả ra ObjectDatabase
+        try
+        {
+            $record = TableUser::find(
+                [
+                    'pass = :passwd: AND user_id = :user_id: ',
+                    'bind' => $params,
+                ]
+            );
+            if($record != NULL && count($record) > 0){
+                return $record;
+            }
+            return NULL;
+        }
+        catch (Exception $ex){
+            return NULL;
+        }
     }
     /**
 	* End Sample function
@@ -55,7 +73,7 @@ class ModelBase extends Model
     {
         try
         {
-            $db = $this->getDI()->getDb();
+            $db = $this->getDb();
 
             $result = $db->query($sql,$param);
 
@@ -73,7 +91,7 @@ class ModelBase extends Model
     {
         try
         {
-            $db = $this->getDI()->getDb();
+            $db = $this->getDb();
 
             $result = $db->execute($sql,$param);
 
@@ -102,6 +120,11 @@ class ModelBase extends Model
     public function getUrl()
     {
         return $this->getDI()->getUrl();
+    }
+    
+    public function getDb()
+    {
+        return $this->getDI()->getDb();
     }
 
 }

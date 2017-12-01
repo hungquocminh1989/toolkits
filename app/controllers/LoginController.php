@@ -9,38 +9,35 @@ class LoginController extends ControllerBase
     }
     public function authAction()
     {
-        	//Ajax response
+        //Ajax response
 	    $this->view->disable();
+	    $arrResponse = array(
+                        'status' => 'NG',
+                        'result' => '',
+                        'error_msg' => ''
+        );
+        
         try{
 
             $params = $this->request->getPost();
             
             $modelUser = new User();
             $m_user_id = $modelUser->checkLoginData($params);
+            
             if($m_user_id !== FALSE){
+            	//Gán login session
                 $this->getSession()->set($this->getDefine()->SESSION->SESS_LOGIN_USER,$m_user_id);
-                return json_encode(
-                    array(
-                        'status' => 'OK',
-                        'result' => $this->url->get('index'),
-                        'error_msg' => ''
-                    )
-                );
+                $arrResponse['status'] = 'OK';
+                $arrResponse['result'] = $this->url->get('index');
+                return json_encode($arrResponse);
             }
-
-            return json_encode(
-                array(
-                    'status' => 'NG',
-                    'error_msg' => $this->getDefine()->MESSAGES->HTML_MSG_ERROR_LOGIN_FAIL
-                )
-            );
+            else{
+                $arrResponse['error_msg'] = $this->getDefine()->MESSAGES->HTML_MSG_ERROR_LOGIN_FAIL;
+                return json_encode($arrResponse);
+			}
         } catch (Exception $ex) {
-            return json_encode(
-                array(
-                    'status' => 'NG',
-                    'error_msg' => $ex->getMessage()
-                )
-            );
+            $arrResponse['error_msg'] = $ex->getMessage();
+            return json_encode($arrResponse);
         }
     }
 

@@ -56,7 +56,6 @@ class ControllerBase extends Controller
 
     public function initialize()
     {
-        $this->config->application->login_user_id = 123;
         $this->tag->setDoctype(Phalcon\Tag::XHTML10_TRANSITIONAL);
 
         $this->assets->addCss('public/css/bootstrap.css');
