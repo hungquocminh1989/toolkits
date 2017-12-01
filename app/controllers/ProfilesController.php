@@ -11,7 +11,7 @@ class ProfilesController extends ControllerBase
         $this->view->setVar('list',$res);
     }
 
-    public function updatePictureAction()
+    public function updatepictureAction()
     {
     	//Ajax response
 	    $this->view->disable();
@@ -44,7 +44,7 @@ class ProfilesController extends ControllerBase
         }
     }
 
-    public function updateCoverAction()
+    public function updatecoverAction()
     {
     	//Ajax response
 	    $this->view->disable();

@@ -13,7 +13,6 @@ class LoginController extends ControllerBase
 	    $this->view->disable();
 	    $arrResponse = array(
                         'status' => 'NG',
-                        'result' => '',
                         'error_msg' => ''
         );
         
@@ -28,7 +27,7 @@ class LoginController extends ControllerBase
             	//Gán login session
                 $this->getSession()->set($this->getDefine()->SESSION->SESS_LOGIN_USER,$m_user_id);
                 $arrResponse['status'] = 'OK';
-                $arrResponse['result'] = $this->url->get('index');
+                $arrResponse['homelink'] = $this->url->get('index');
                 return json_encode($arrResponse);
             }
             else{

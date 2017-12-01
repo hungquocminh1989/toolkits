@@ -78,7 +78,7 @@
                         formData.append('account_select',$('#account_select').val() );
                         $.ajax({
                             type: "POST",
-                            url: "<%$smarty.const.ACW_BASE_URL%>profiles/updatePicture",
+                            url: "{{ config.application.baseUri }}profiles/updatepicture",
                             data: formData,
                             dataType: 'json',
                             cache : false,
@@ -108,7 +108,7 @@
                         formData.append('account_select',$('#account_select').val() );
                         $.ajax({
                             type: "POST",
-                            url: "<%$smarty.const.ACW_BASE_URL%>profiles/updateCover",
+                            url: "{{ config.application.baseUri }}profiles/updatecover",
                             data: formData,
                             dataType: 'json',
                             cache : false,

@@ -25,7 +25,7 @@
                             <button id="get_token" type="button" class="btn btn-info">Nhập Token</button>
                             <div class="form-group">
                                 <label>Kết Quả:</label>
-                                <textarea id="result_token" name="multi_line"  class="form-control" rows="5"></textarea>
+                                <textarea readonly id="result_token" name="multi_line"  class="form-control" rows="5"></textarea>
                             </div>
                         </form>
                     </div>
@@ -85,7 +85,13 @@
             Base_ajax.ok_cancel_box('Thực hiện xử lý này ?',function(){
                     var html_ajax = new Base_ajax("json");
                     html_ajax.done_func = function(data) {
-                        Base_ajax.message_box('Xử lý hoàn thành!');
+                    	if(data.status == 'OK'){
+							Base_ajax.message_box('Xử lý hoàn thành! ('+data.result_count+')');
+						}
+						else{
+							Base_ajax.message_box_error(data.error_msg);
+						}
+                        
                     };
                     var data = $("form#frm_token_multi").serializeArray();
                     html_ajax.connect("POST", "token/getTokenMulti", data);

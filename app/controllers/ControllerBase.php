@@ -17,7 +17,6 @@ class ControllerBase extends Controller
 	    
 	    $arrResponse = array(
                         'status' => 'NG',
-                        'result' => '',
                         'error_msg' => ''
         );
         
@@ -29,7 +28,7 @@ class ControllerBase extends Controller
             if(TRUE){
                 //..
                 $arrResponse['status'] = '';
-                $arrResponse['result'] = $this->url->get('index');
+                $arrResponse['blabla'] = $this->url->get('index');
             }
             else{
 				$arrResponse['status'] = 'NG';
@@ -90,6 +89,11 @@ class ControllerBase extends Controller
     public function getUrl()
     {
         return $this->getDI()->getUrl();
+    }
+    
+    public function getHttpUrl()
+    {
+        return $this->getDI()->getHttpurl();
     }
 
     public function indexAction()

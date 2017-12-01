@@ -9,8 +9,7 @@ class BatchAddFriendController extends ControllerBase
         $this->view->disable();
         echo "Start";
         echo "<br>";
-        echo $this->getUrl()->getBaseUri();
-        //$this->main();
+        $this->main();
         echo "End";
     }
 
@@ -87,7 +86,7 @@ class BatchAddFriendController extends ControllerBase
                     file_put_contents($fileLock, 'start');
                     //ACWLog::debug_var(LOG_SUCCESS, "====Start Batch");
                 }
-
+				die();
                 $model = new HiddenBatch();
                 $curl = new curlpost();
                 do{

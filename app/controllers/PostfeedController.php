@@ -2,8 +2,16 @@
 
 class PostFeedController extends ControllerBase
 {
+	public function indexAction()
+    {
+        $this->checkAuth();
+        $modelToken = new Token();
+        $res = $modelToken->getTokenList();
 
-    public function createPostAction()
+        $this->view->setVar('list',$res);
+    }
+    
+    public function createpostAction()
     {
         //Ajax response
         $this->view->disable();

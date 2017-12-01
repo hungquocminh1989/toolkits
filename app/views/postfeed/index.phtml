@@ -20,10 +20,10 @@
                                     <option value="-1"></option>
                                     <option value="">Tất cả</option>
                                     {% if list != null %}
-                                        {% for index,item in list %}
-                                            <option value="{{item.id}}">{{item.user_id}} - {{item.full_name}}</option>
-                                        {% endfor  %}
-                                    {% endif  %}
+                                        {% for item in list %}
+                                            <option value="{{item['m_token_id']}}">{{item['user_id']}} - {{item['full_name']}}</option>
+                                        {% endfor %}
+                                    {% endif %}
                                 </select>
                             </div>
                             <div class="form-group">
@@ -61,7 +61,7 @@
                         formData.append('post_content',$('#post_content').val() );
                         $.ajax({
                             type: "POST",
-                            url: "{{ config.application.baseUri }}postfeed/createPost",
+                            url: "{{ config.application.baseUri }}postfeed/createpost",
                             data: formData,
                             dataType: 'json',
                             cache : false,

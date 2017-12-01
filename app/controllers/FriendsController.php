@@ -69,8 +69,8 @@ class FriendsController extends ControllerBase
         $fileLock  = $this->getConfig()->application->tmpDir . $this->getDefine()->LOCK->FOLDER_LOCK . '/'.$m_user_id.'_'. $this->getDefine()->LOCK->FILE_LOCK;
         if(file_exists($fileLock) === FALSE) {
             do{
-                $curl = new curlpost_lib_model();
-                $curl->execute_batch(ACW_BASE_URL.'batch/php/batch_add_friends.php');
+                $curl = new curlpost();
+                $curl->execute_batch($this->getHttpUrl().'Batchaddfriend?m_user_id='.$m_user_id);
                 sleep(3);
             } while(file_exists($fileLock) === FALSE);
 

@@ -29,11 +29,15 @@ $di->setShared('define', function () {
  */
 $di->setShared('url', function () {
     $config = $this->getConfig();
+    return $config->application->baseUri;
+});
 
-    $url = new UrlResolver();
-    $url->setBaseUri($config->application->baseUri);
-
-    return $url;
+/**
+ * The Http URL
+ */
+$di->setShared('httpurl', function () {
+    $config = $this->getConfig();
+    return 'http://'.$_SERVER['SERVER_NAME'].$config->application->baseUri;
 });
 
 /**
