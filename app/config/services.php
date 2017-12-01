@@ -29,7 +29,11 @@ $di->setShared('define', function () {
  */
 $di->setShared('url', function () {
     $config = $this->getConfig();
-    return $config->application->baseUri;
+
+    $url = new UrlResolver();
+    $url->setBaseUri($config->application->baseUri);
+
+    return $url;
 });
 
 /**
