@@ -1,6 +1,6 @@
 <?php
 
-class curlpost
+class curlpost extends ControllerBase
 {
 	
 	/**Get UID 
@@ -216,12 +216,17 @@ class curlpost
 	
 	private function graphRequest_POST($access_token = DEFAULT_TOKEN,$graphUrl,$PostFields = array()){
 		$PostFields['access_token'] = $access_token;
+		$this->debugLog(__CLASS__, __FUNCTION__,'Url',$graphUrl);
+		$this->debugLog(__CLASS__, __FUNCTION__,'PostFields',$PostFields);
 		$result = $this->cURL($graphUrl,false,$PostFields);
+		$this->debugLog(__CLASS__, __FUNCTION__,'Return',$result);
 		return $result;
 	}
 	
 	private function graphRequest_GET($graphUrl){
+		$this->debugLog(__CLASS__, __FUNCTION__,'Url',$graphUrl);
 		$result = $this->cURL($graphUrl,false,null);
+		$this->debugLog(__CLASS__, __FUNCTION__,'Return',$result);
 		return $result;
 	}
 	

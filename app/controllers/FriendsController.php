@@ -4,14 +4,17 @@ class FriendsController extends ControllerBase
 {
     public function indexAction()
     {
+    	$this->checkAuth();
         $m_user_id = $this->getSession()->get($this->getDefine()->SESSION->SESS_LOGIN_USER);
         $fileLock  = $this->getConfig()->application->tmpDir . $this->getDefine()->LOCK->FOLDER_LOCK . '/'.$m_user_id.'_'. $this->getDefine()->LOCK->FILE_LOCK;
         $model = new Friend();
         $result['list'] = $model->getFriends();
         if(file_exists($fileLock) === TRUE) {
+        	$this->debugLog(__CLASS__, __FUNCTION__,'Batch đang chạy.');
             $result['batch_status'] = 'locked';
         }
         else{
+        	$this->debugLog(__CLASS__, __FUNCTION__,'Batch không đang chạy.');
             $result['batch_status'] = 'unlock';
         }
 
@@ -36,6 +39,7 @@ class FriendsController extends ControllerBase
                     $param['uid'] = $uid;
                     $param['name'] = $info['name'];
                     $modelFriend->insertFriend($param);
+                    $this->debugLog(__CLASS__, __FUNCTION__,'Import uid thành công',$param);
                 }
                 return json_encode(
                     array(

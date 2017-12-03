@@ -14,7 +14,8 @@ class TokenInfoController extends ControllerBase
                 $listToken[$k]['friends_count'] = $curl->getCountFriend($item['token2'],$item['user_id']);
             }
         }
-
+        
+        $this->debugLog(__CLASS__, __FUNCTION__,'Kết quả token',$listToken);
         $this->view->setVar('tokenInfo',$listToken);
     }
 

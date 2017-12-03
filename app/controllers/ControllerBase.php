@@ -12,6 +12,9 @@ class ControllerBase extends Controller
 	*/
 	public function sampleAction()
     {
+        //Log biến
+        $this->debugLog(__CLASS__, __FUNCTION__,'Dữ liệu post',['a','b']);
+
         //Ajax response
 	    $this->view->disable();
 	    
@@ -75,6 +78,30 @@ class ControllerBase extends Controller
     {
         return $this->getDI()->getDefine();
     }
+
+    public function debugLog($prefix_class, $prefix_function, $message, $paramLog = '')
+    {
+    	if((boolean)json_decode($this->getDefine()->SETTING->ENABLE_DEBUG_LOGGING) == TRUE){
+	        $this->baseLog($prefix_class)->debug('Function: '.$prefix_function."\n".$message."\n".var_export($paramLog,TRUE));
+        }
+    }
+    
+    public function createLog($prefix_class, $message, $paramLog = '')
+    {
+    	if((boolean)json_decode($this->getDefine()->SETTING->ENABLE_LOGGING) == TRUE){
+			$this->baseLog($prefix_class)->debug($message."\n".var_export($paramLog,TRUE));
+		}
+    }
+    
+    public function baseLog($prefix){
+		$config = $this->getConfig();
+	    $define = $this->getDefine();
+	    $session = $this->getSession();
+	    $logFilename = date('Ymd').'_DEBUG_'.$prefix.'_'.$session->get($define->SESSION->SESS_LOGIN_USER).'.log';
+	    $logging = new FileAdapter($config->application->logsDir.$logFilename);
+	    
+	    return $logging;
+	}
 
     public function getSession()
     {

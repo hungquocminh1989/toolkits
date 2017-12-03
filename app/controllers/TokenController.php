@@ -13,13 +13,19 @@ class TokenController extends ControllerBase
         );
         try{
             $params = $this->request->getPost();
+            $this->debugLog(__CLASS__, __FUNCTION__,'Lấy token',$params);
+
             $model = new Token();
             $arrResponse = $model->run_get_token($params['email'],$params['pass']);
+            $this->debugLog(__CLASS__, __FUNCTION__,'Lấy token thành công',$arrResponse);
+
             return json_encode($arrResponse);
 
         } catch (Exception $e) {
             $arrResponse['error_msg'] = $this->getDefine()->EXCEPTION_CATCH_ERROR_MSG;
-            return json_encode($result);
+            $this->debugLog(__CLASS__, __FUNCTION__,'Lỗi bất thường',$arrResponse);
+
+            return json_encode($arrResponse);
         }
     }
 
@@ -37,7 +43,7 @@ class TokenController extends ControllerBase
             if($params['multi_line'] != ''){
                 $multi_line = preg_replace("/\r\n|\r|\n/", '  ', $params['multi_line']);
                 $arr_line = explode('  ',trim($multi_line));
-				$iOK = 0;
+                $iOK = 0;
                 foreach($arr_line as $key => $value){
                     $arr_user = explode('|',$value);
                     if(count($arr_user) == 2){
@@ -51,17 +57,21 @@ class TokenController extends ControllerBase
                 }
                 $arrResponse['status'] = 'OK';
                 $arrResponse['result_count'] = $iOK.'/'.count($arr_line);
-                
+                $this->debugLog(__CLASS__, __FUNCTION__,'Lấy token hàng loạt',$arr_line);
+                $this->debugLog(__CLASS__, __FUNCTION__,'Kết quả',$arrResponse);
+
                 return json_encode($arrResponse);
             }
             else{
                 $arrResponse['error_msg'] = 'No data.';
+                return json_encode($arrResponse);
             }
-            return json_encode($result);
 
         } catch (Exception $e) {
-            $result['error_msg'] = $this->getDefine()->EXCEPTION_CATCH_ERROR_MSG;
-            return json_encode($result);
+            $arrResponse['error_msg'] = $this->getDefine()->EXCEPTION_CATCH_ERROR_MSG;
+            $this->debugLog(__CLASS__, __FUNCTION__,'Có lỗi xảy ra',$arrResponse);
+
+            return json_encode($arrResponse);
         }
     }
 

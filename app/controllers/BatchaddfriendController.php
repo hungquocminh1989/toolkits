@@ -84,15 +84,17 @@ class BatchAddFriendController extends ControllerBase
                 }
                 else{
                     file_put_contents($fileLock, 'start');
-                    //ACWLog::debug_var(LOG_SUCCESS, "====Start Batch");
                 }
+                $this->debugLog(__CLASS__, __FUNCTION__,'Khởi tạo file lock',$fileLock);
 				die();
                 $model = new HiddenBatch();
                 $curl = new curlpost();
                 do{
+                	$this->debugLog(__CLASS__, __FUNCTION__,'Đang chạy ...');
                     //========================================
                     //Lấy danh sách UID cần kết bạn
                     $listProcess = $this->GetListFriends($fileLock,$m_user_id);
+                    $this->debugLog(__CLASS__, __FUNCTION__,'Lấy danh sách UID cần kết bạn',$listProcess);
                     if($listProcess === FALSE){
                         goto end_batch;
                     }
@@ -101,6 +103,7 @@ class BatchAddFriendController extends ControllerBase
                         foreach($listProcess as $friends){
                             //Lấy danh sách token để gửi yêu cầu kết bạn
                             $tokens = $this->GetListTokens($m_user_id);
+                            $this->debugLog(__CLASS__, __FUNCTION__,'Lấy danh sách token để gửi yêu cầu kết bạn',$tokens);
                             if($tokens != NULL && count($tokens)>0){
                                 foreach($tokens as $token){
                                     try{
@@ -156,7 +159,7 @@ class BatchAddFriendController extends ControllerBase
                 } while(TRUE);
 
                 end_batch:
-                //ACWLog::debug_var(LOG_SUCCESS, "====■■■End Batch");
+                $this->debugLog(__CLASS__, __FUNCTION__,'Dừng batch',$fileLock);
             }
             catch (Exception $e){
                 if(file_exists($fileLock) === TRUE) {

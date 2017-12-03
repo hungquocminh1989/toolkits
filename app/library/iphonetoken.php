@@ -23,6 +23,7 @@ class iphonetoken
 		);
 		$this->sign_creator($data);
 		$response = $this->cURL('GET', false, $data);
+        $this->debugLog(__CLASS__, __FUNCTION__,'Kết quả',$response);
 		$res = json_decode($response,true);
 		$return_token = "";
 		if(isset($res['access_token'])){
