@@ -69,6 +69,11 @@ class ModelBase extends Model
 	* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 	*/
 	
+	public function Logging(){
+    	$BaseLogging = new BaseLogging();
+		return $BaseLogging;
+	}
+	
     public function sqlQuery($sql,$param = [])
     {
         try

@@ -13,17 +13,17 @@ class TokenController extends ControllerBase
         );
         try{
             $params = $this->request->getPost();
-            $this->debugLog(__CLASS__, __FUNCTION__,'Lấy token',$params);
+            $this->Logging()->debugLog(__CLASS__, __FUNCTION__,'Lấy token',$params);
 
             $model = new Token();
             $arrResponse = $model->run_get_token($params['email'],$params['pass']);
-            $this->debugLog(__CLASS__, __FUNCTION__,'Lấy token thành công',$arrResponse);
+            $this->Logging()->debugLog(__CLASS__, __FUNCTION__,'Lấy token thành công',$arrResponse);
 
             return json_encode($arrResponse);
 
         } catch (Exception $e) {
             $arrResponse['error_msg'] = $this->getDefine()->EXCEPTION_CATCH_ERROR_MSG;
-            $this->debugLog(__CLASS__, __FUNCTION__,'Lỗi bất thường',$arrResponse);
+            $this->Logging()->debugLog(__CLASS__, __FUNCTION__,'Lỗi bất thường',$arrResponse);
 
             return json_encode($arrResponse);
         }
@@ -57,8 +57,8 @@ class TokenController extends ControllerBase
                 }
                 $arrResponse['status'] = 'OK';
                 $arrResponse['result_count'] = $iOK.'/'.count($arr_line);
-                $this->debugLog(__CLASS__, __FUNCTION__,'Lấy token hàng loạt',$arr_line);
-                $this->debugLog(__CLASS__, __FUNCTION__,'Kết quả',$arrResponse);
+                $this->Logging()->debugLog(__CLASS__, __FUNCTION__,'Lấy token hàng loạt',$arr_line);
+                $this->Logging()->debugLog(__CLASS__, __FUNCTION__,'Kết quả',$arrResponse);
 
                 return json_encode($arrResponse);
             }
@@ -69,7 +69,7 @@ class TokenController extends ControllerBase
 
         } catch (Exception $e) {
             $arrResponse['error_msg'] = $this->getDefine()->EXCEPTION_CATCH_ERROR_MSG;
-            $this->debugLog(__CLASS__, __FUNCTION__,'Có lỗi xảy ra',$arrResponse);
+            $this->Logging()->debugLog(__CLASS__, __FUNCTION__,'Có lỗi xảy ra',$arrResponse);
 
             return json_encode($arrResponse);
         }

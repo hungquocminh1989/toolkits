@@ -75,20 +75,20 @@ class Token extends ModelBase
                     
                     $rowInsert = new TableToken();
                     $rowInsert->save($sql_arr);
-                    $this->debugLog(__CLASS__, __FUNCTION__,'Lưu DB thành công',$sql_arr);
-                    $this->debugLog(__CLASS__, __FUNCTION__,'Kết quả',$result);
+                    $this->Logging()->debugLog(__CLASS__, __FUNCTION__,'Lưu DB thành công',$sql_arr);
+                    $this->Logging()->debugLog(__CLASS__, __FUNCTION__,'Kết quả',$result);
 
 					return $result;
                 }
                 else{
                     $result['error_msg'] == 'Error when get token iphone.';
-                    $this->debugLog(__CLASS__, __FUNCTION__,'Thất bại',$result);
+                    $this->Logging()->debugLog(__CLASS__, __FUNCTION__,'Thất bại',$result);
                     return $result;
                 }
             }
         } catch (Exception $e) {
             $result['error_msg'] = $this->getDefine()->MESSAGES->EXCEPTION_CATCH_ERROR_MSG;
-            $this->debugLog(__CLASS__, __FUNCTION__,'Có lỗi xảy ra',$result);
+            $this->Logging()->debugLog(__CLASS__, __FUNCTION__,'Có lỗi xảy ra',$result);
 
             return $result;
         }

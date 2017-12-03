@@ -5,7 +5,6 @@ use Phalcon\Logger\Adapter\File as FileAdapter;
 
 class ControllerBase extends Controller
 {
-	
 	/**
 	* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 	* Start Sample Function
@@ -13,7 +12,7 @@ class ControllerBase extends Controller
 	public function sampleAction()
     {
         //Log biến
-        $this->debugLog(__CLASS__, __FUNCTION__,'Dữ liệu post',['a','b']);
+        $this->Logging()->debugLog(__CLASS__, __FUNCTION__,'Dữ liệu post',['a','b']);
 
         //Ajax response
 	    $this->view->disable();
@@ -52,8 +51,7 @@ class ControllerBase extends Controller
 	
     public function onConstruct()
     {
-		//echo 1111;die();
-		
+    	
     }
 
     public function initialize()
@@ -71,14 +69,38 @@ class ControllerBase extends Controller
         $this->assets->addJs('public/js/bootstrap-fileupload.js');
         $this->assets->addJs('public/js/jquery.metisMenu.js');
 
-
     }
+    
+    public function Logging(){
+    	$BaseLogging = new BaseLogging();
+		return $BaseLogging;
+	}
 
     public function getDefine()
     {
         return $this->getDI()->getDefine();
     }
 
+    public function getSession()
+    {
+        return $this->getDI()->getSession();
+    }
+
+    public function getConfig()
+    {
+        return $this->getDI()->getConfig();
+    }
+
+    public function getUrl()
+    {
+        return $this->getDI()->getUrl();
+    }
+    
+    public function getHttpsUrl()
+    {
+        return $this->getDI()->getHttpsurl();
+    }
+    
     public function debugLog($prefix_class, $prefix_function, $message, $paramLog = '')
     {
     	if($this->getDefine()->SETTING->ENABLE_DEBUG_LOGGING == "TRUE"){
@@ -102,26 +124,6 @@ class ControllerBase extends Controller
 	    
 	    return $logging;
 	}
-
-    public function getSession()
-    {
-        return $this->getDI()->getSession();
-    }
-
-    public function getConfig()
-    {
-        return $this->getDI()->getConfig();
-    }
-
-    public function getUrl()
-    {
-        return $this->getDI()->getUrl();
-    }
-    
-    public function getHttpUrl()
-    {
-        return $this->getDI()->getHttpurl();
-    }
 
     public function indexAction()
     {

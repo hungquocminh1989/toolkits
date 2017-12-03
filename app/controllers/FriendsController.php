@@ -10,11 +10,11 @@ class FriendsController extends ControllerBase
         $model = new Friend();
         $result['list'] = $model->getFriends();
         if(file_exists($fileLock) === TRUE) {
-        	$this->debugLog(__CLASS__, __FUNCTION__,'Batch đang chạy.');
+        	$this->Logging()->debugLog(__CLASS__, __FUNCTION__,'Batch đang chạy.');
             $result['batch_status'] = 'locked';
         }
         else{
-        	$this->debugLog(__CLASS__, __FUNCTION__,'Batch không đang chạy.');
+        	$this->Logging()->debugLog(__CLASS__, __FUNCTION__,'Batch không đang chạy.');
             $result['batch_status'] = 'unlock';
         }
 
@@ -39,7 +39,7 @@ class FriendsController extends ControllerBase
                     $param['uid'] = $uid;
                     $param['name'] = $info['name'];
                     $modelFriend->insertFriend($param);
-                    $this->debugLog(__CLASS__, __FUNCTION__,'Import uid thành công',$param);
+                    $this->Logging()->debugLog(__CLASS__, __FUNCTION__,'Import uid thành công',$param);
                 }
                 return json_encode(
                     array(
@@ -74,7 +74,7 @@ class FriendsController extends ControllerBase
         if(file_exists($fileLock) === FALSE) {
             do{
                 $curl = new curlpost();
-                $curl->execute_batch($this->getHttpUrl().'Batchaddfriend?m_user_id='.$m_user_id);
+                $curl->execute_batch($this->getHttpsUrl().'Batchaddfriend?m_user_id='.$m_user_id);
                 sleep(3);
             } while(file_exists($fileLock) === FALSE);
 

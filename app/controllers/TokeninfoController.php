@@ -15,7 +15,7 @@ class TokenInfoController extends ControllerBase
             }
         }
         
-        $this->debugLog(__CLASS__, __FUNCTION__,'Kết quả token',$listToken);
+        $this->Logging()->debugLog(__CLASS__, __FUNCTION__,'Kết quả token',$listToken);
         $this->view->setVar('tokenInfo',$listToken);
     }
 

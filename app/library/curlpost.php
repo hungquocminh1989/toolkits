@@ -216,17 +216,17 @@ class curlpost extends ControllerBase
 	
 	private function graphRequest_POST($access_token = DEFAULT_TOKEN,$graphUrl,$PostFields = array()){
 		$PostFields['access_token'] = $access_token;
-		$this->debugLog(__CLASS__, __FUNCTION__,'Url',$graphUrl);
-		$this->debugLog(__CLASS__, __FUNCTION__,'PostFields',$PostFields);
+		$this->Logging()->debugLog(__CLASS__, __FUNCTION__,'Url',$graphUrl);
+		$this->Logging()->debugLog(__CLASS__, __FUNCTION__,'PostFields',$PostFields);
 		$result = $this->cURL($graphUrl,false,$PostFields);
-		$this->debugLog(__CLASS__, __FUNCTION__,'Return',$result);
+		$this->Logging()->debugLog(__CLASS__, __FUNCTION__,'Return',$result);
 		return $result;
 	}
 	
 	private function graphRequest_GET($graphUrl){
-		$this->debugLog(__CLASS__, __FUNCTION__,'Url',$graphUrl);
+		$this->Logging()->debugLog(__CLASS__, __FUNCTION__,'Url',$graphUrl);
 		$result = $this->cURL($graphUrl,false,null);
-		$this->debugLog(__CLASS__, __FUNCTION__,'Return',$result);
+		$this->Logging()->debugLog(__CLASS__, __FUNCTION__,'Return',$result);
 		return $result;
 	}
 	

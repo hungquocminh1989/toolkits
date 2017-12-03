@@ -39,7 +39,7 @@ $di->setShared('url', function () {
 /**
  * The Http URL
  */
-$di->setShared('httpurl', function () {
+$di->setShared('httpsurl', function () {
     $config = $this->getConfig();
     return 'http://'.$_SERVER['SERVER_NAME'].$config->application->baseUri;
 });

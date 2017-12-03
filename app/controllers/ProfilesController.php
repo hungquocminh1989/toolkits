@@ -24,7 +24,7 @@ class ProfilesController extends ControllerBase
         try{
 
             $params = $this->request->getPost();
-            $this->debugLog(__CLASS__, __FUNCTION__,'Thông tin',$params);
+            $this->Logging()->debugLog(__CLASS__, __FUNCTION__,'Thông tin',$params);
             $this->update_photo_profile($params,TRUE);
             
             if(TRUE){
@@ -57,7 +57,7 @@ class ProfilesController extends ControllerBase
         try{
 
             $params = $this->request->getPost();
-            $this->debugLog(__CLASS__, __FUNCTION__,'Thông tin',$params);
+            $this->Logging()->debugLog(__CLASS__, __FUNCTION__,'Thông tin',$params);
             $this->update_photo_profile($params,FALSE);
             
             if(TRUE){
@@ -80,26 +80,26 @@ class ProfilesController extends ControllerBase
     public function update_photo_profile($params,$avatar){
         if ($this->request->hasFiles()) {
             $files = $this->request->getUploadedFiles();
-            $this->debugLog(__CLASS__, __FUNCTION__,'File upload',$files);
+            $this->Logging()->debugLog(__CLASS__, __FUNCTION__,'File upload',$files);
             
             $arrPathImages = array();
             $arrLinkImages = array();
             foreach ($files as $file) {
                 if(count($file) > 0){
                     $filename = md5(uniqid(rand().time(),1)).'.'.$file->getExtension();
-                    $desPath = $this->getConfig()->application->tmpDir.'upload_images/'.$filename;
+                    $desPath = $this->getConfig()->application->uploadDir.$filename;
                     if($file->moveTo($desPath) === TRUE){
                         $arrPathImages[] = $desPath;
-                        $arrLinkImages[] = $this->getConfig()->application->baseUri.'upload_images/'.$filename;
+                        $arrLinkImages[] = $this->getHttpsUrl().'tmp/uploads/'.$filename;
                     }
                 }
             }
-            $this->debugLog(__CLASS__, __FUNCTION__,'Link upload',$arrLinkImages);
+            $this->Logging()->debugLog(__CLASS__, __FUNCTION__,'Link upload',$arrLinkImages);
 
             $modelToken = new Token();
             $curl = new curlpost();
             $listToken = $modelToken->getTokenById($params['account_select']);
-            $this->debugLog(__CLASS__, __FUNCTION__,'list token',$listToken);
+            $this->Logging()->debugLog(__CLASS__, __FUNCTION__,'list token',$listToken);
             
             if($listToken != NULL && count($listToken) > 0){
                 foreach($listToken as $k => $value){

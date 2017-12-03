@@ -20,23 +20,26 @@ class PostFeedController extends ControllerBase
 
             if ($this->request->hasFiles()) {
                 $files = $this->request->getUploadedFiles();
+                $this->Logging()->debugLog(__CLASS__, __FUNCTION__,'File upload',$files);
 
                 $arrPathImages = array();
                 $arrLinkImages = array();
                 foreach ($files as $file) {
-                    if(count($file) > 0){
-                        $filename = md5(uniqid(rand().time(),1)).'.'.$file->getExtension();
-                        $desPath = $this->getConfig()->application->tmpDir.'upload_images/'.$filename;
-                        if($file->moveTo($desPath) === TRUE){
-                            $arrPathImages[] = $desPath;
-                            $arrLinkImages[] = $this->getConfig()->application->baseUri.'upload_images/'.$filename;
-                        }
-                    }
-                }
+	                if(count($file) > 0){
+	                    $filename = md5(uniqid(rand().time(),1)).'.'.$file->getExtension();
+	                    $desPath = $this->getConfig()->application->uploadDir.$filename;
+	                    if($file->moveTo($desPath) === TRUE){
+	                        $arrPathImages[] = $desPath;
+	                        $arrLinkImages[] = $this->getHttpsUrl().'tmp/uploads/'.$filename;
+	                    }
+	                }
+	            }
+	            $this->Logging()->debugLog(__CLASS__, __FUNCTION__,'Link upload',$arrLinkImages);
 
                 $modelToken = new Token();
                 $curl = new curlpost();
                 $listToken = $modelToken->getTokenById($params['account_select']);
+                $this->Logging()->debugLog(__CLASS__, __FUNCTION__,'list token',$listToken);
 
                 if($listToken != NULL && count($listToken) > 0){
                     foreach($listToken as $k => $value){
