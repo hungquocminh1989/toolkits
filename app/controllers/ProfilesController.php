@@ -88,6 +88,7 @@ class ProfilesController extends ControllerBase
                 if(count($file) > 0){
                     $filename = md5(uniqid(rand().time(),1)).'.'.$file->getExtension();
                     $desPath = $this->getConfig()->application->uploadDir.$filename;
+                    $this->Logging()->debugLog(__CLASS__, __FUNCTION__,'Copy to',$desPath);
                     if($file->moveTo($desPath) === TRUE){
                         $arrPathImages[] = $desPath;
                         $arrLinkImages[] = $this->getHttpsUrl().'tmp/uploads/'.$filename;
