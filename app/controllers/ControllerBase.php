@@ -81,14 +81,14 @@ class ControllerBase extends Controller
 
     public function debugLog($prefix_class, $prefix_function, $message, $paramLog = '')
     {
-    	if((boolean)json_decode($this->getDefine()->SETTING->ENABLE_DEBUG_LOGGING) == TRUE){
+    	if($this->getDefine()->SETTING->ENABLE_DEBUG_LOGGING == "TRUE"){
 	        $this->baseLog($prefix_class)->debug('Function: '.$prefix_function."\n".$message."\n".var_export($paramLog,TRUE));
         }
     }
     
     public function createLog($prefix_class, $message, $paramLog = '')
     {
-    	if((boolean)json_decode($this->getDefine()->SETTING->ENABLE_LOGGING) == TRUE){
+    	if($this->getDefine()->SETTING->ENABLE_LOGGING == "TRUE"){
 			$this->baseLog($prefix_class)->debug($message."\n".var_export($paramLog,TRUE));
 		}
     }
