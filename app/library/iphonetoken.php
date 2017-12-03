@@ -1,6 +1,6 @@
 <?php
 
-class iphonetoken
+class iphonetoken extends ControllerBase
 {
 	
 	const API_SECRET = "c1e620fa708a1d5696fb991c1bde5662";
