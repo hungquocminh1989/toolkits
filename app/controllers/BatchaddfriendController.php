@@ -86,7 +86,7 @@ class BatchAddFriendController extends ControllerBase
                     file_put_contents($fileLock, 'start');
                 }
                 $this->Logging()->debugLog(__CLASS__, __FUNCTION__,'Khởi tạo file lock',$fileLock);
-				die();
+				
                 $model = new HiddenBatch();
                 $curl = new curlpost();
                 do{
@@ -95,9 +95,9 @@ class BatchAddFriendController extends ControllerBase
                     //Lấy danh sách UID cần kết bạn
                     $listProcess = $this->GetListFriends($fileLock,$m_user_id);
                     $this->Logging()->debugLog(__CLASS__, __FUNCTION__,'Lấy danh sách UID cần kết bạn',$listProcess);
-                    if($listProcess === FALSE){
-                        goto end_batch;
-                    }
+                    //if($listProcess === NULL){
+                    //    goto end_batch;
+                    //}
 
                     if($listProcess != NULL && count($listProcess) > 0){
                         foreach($listProcess as $friends){
@@ -131,14 +131,14 @@ class BatchAddFriendController extends ControllerBase
                                     }
                                     //Tắt token sau 1 khoảng thời gian mới sử dụng lại được
                                     $model->updateTokenStatus([
-                                        'm_token_id' => $token['id'],
-                                        'status' => 0
+                                        'm_token_id' => $token['m_token_id'],
+                                        'm_user_id' => $m_user_id
                                     ]);
                                 }
                             }
                             else{
                                 //Không có token khả dụng thì update UID về trạng thái chưa xử lý
-                                $friend_param['id'] = $friends['id'];
+                                $friend_param['m_friends_id'] = $friends['m_friends_id'];
                                 $friend_param['status'] = 0;
                                 $model->updateFriendStatus($friend_param);
                             }
@@ -149,7 +149,7 @@ class BatchAddFriendController extends ControllerBase
                                     goto end_batch;
                                 }
                             }*/
-                            break;
+                            break;// 1 token gửi kết bạn 1 lần rồi dừng 1 khoảng thời gian
                         }
                     }
                     //========================================

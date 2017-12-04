@@ -37,10 +37,12 @@ class Token extends ModelBase
                     ]
                 ]
             );
+            
             if($records != NULL && count($records) > 0){
             	foreach ($records as $record) {
             		$record->delete();
             	}
+            	$this->Logging()->debugLog(__CLASS__, __FUNCTION__,'Delete token cu',$records->toArray());
                 return TRUE;
             }
             return FALSE;

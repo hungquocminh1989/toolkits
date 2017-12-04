@@ -83,24 +83,17 @@ class HiddenBatch extends ModelBase
     public function updateTokenStatus($param){
         try
         {
-            $record = TableToken::find(
-                [
-                    'm_token_id = :m_token_id: AND status != :status: AND m_user_id = :m_user_id:',
-                    'bind' => [
-                        'm_user_id' => $param['m_user_id'],
-                        'm_token_id' => $param['m_token_id'],
-                        'status' => $param['status']
-                    ]
-                ]
-            );
+        	$sql_update = "
+                UPDATE m_token
+				SET use_flg = 0 
+					,last_use_datetime = NOW()
+				WHERE 
+					m_token_id = :m_token_id and m_user_id = :m_user_id;
+            ";
+            
+            $result = $this->sqlExecute($sql_update,$param);
 
-            if($record != NULL && count($record) > 0){
-                $record->getFirst()->setStatus($param['status']);
-                $record->getFirst()->save();
-
-                return TRUE;
-            }
-            return FALSE;
+            return TRUE;
         }
         catch (Exception $ex){
             return FALSE;
