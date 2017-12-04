@@ -23,6 +23,32 @@ class Token extends ModelBase
             return NULL;
         }
     }
+    
+    public function deleteTokenByUid($uid)
+    {
+        try
+        {
+            $records = TableToken::find(
+                [
+                    'm_user_id = :m_user_id: AND user_id = :user_id:',
+                    'bind' => [
+                    	'm_user_id' => $this->getSession()->get($this->getDefine()->SESSION->SESS_LOGIN_USER),
+                        'user_id' => $uid
+                    ]
+                ]
+            );
+            if($records != NULL && count($records) > 0){
+            	foreach ($records as $record) {
+            		$record->delete();
+            	}
+                return TRUE;
+            }
+            return FALSE;
+        }
+        catch (Exception $ex){
+            return FALSE;
+        }
+    }
 
     public function getTokenById($id)
     {
@@ -73,6 +99,7 @@ class Token extends ModelBase
                     $sql_arr['token2'] = $arr[6];
                     $sql_arr['full_name'] = $info['name'];
                     
+                    $this->deleteTokenByUid($info['id']);
                     $rowInsert = new TableToken();
                     $rowInsert->save($sql_arr);
                     $this->Logging()->debugLog(__CLASS__, __FUNCTION__,'Lưu DB thành công',$sql_arr);
