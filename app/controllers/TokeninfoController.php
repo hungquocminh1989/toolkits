@@ -18,6 +18,35 @@ class TokenInfoController extends ControllerBase
         $this->Logging()->debugLog(__CLASS__, __FUNCTION__,'Kết quả token',$listToken);
         $this->view->setVar('tokenInfo',$listToken);
     }
+    
+    public function updateinfoflgAction()
+    {
+        //Ajax response
+        $this->view->disable();
+        $arrResponse = array(
+                        'status' => 'NG',
+                        'error_msg' => ''
+        );
+        try{
+            $params = $this->request->getPost();
+			
+            $model = new Token();
+            $res = $model->updateInfoStatus($params['m_token_id'],$params['info_status']);
+			if($res == TRUE){
+				$arrResponse['status'] = 'OK';
+			}
+			else{
+				$arrResponse['error_msg'] = 'Update Fail';
+			}
+            return json_encode($arrResponse);
+
+        } catch (Exception $e) {
+            $arrResponse['error_msg'] = $this->getDefine()->EXCEPTION_CATCH_ERROR_MSG;
+            $this->Logging()->debugLog(__CLASS__, __FUNCTION__,'Lỗi bất thường',$arrResponse);
+
+            return json_encode($arrResponse);
+        }
+    }
 
 }
 

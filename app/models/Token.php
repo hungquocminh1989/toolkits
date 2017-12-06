@@ -2,6 +2,33 @@
 
 class Token extends ModelBase
 {
+	
+	public function updateInfoStatus($m_token_id,$info_status)
+    {
+        try
+        {
+        	$this->Logging()->debugLog(__CLASS__, __FUNCTION__,$this->getSession()->get($this->getDefine()->SESSION->SESS_LOGIN_USER));
+            $record = TableToken::find(
+                [
+                    'm_token_id = :m_token_id: AND m_user_id = :m_user_id:',
+                    'bind' => [
+                    	'm_token_id' => $m_token_id,
+                        'm_user_id' => $this->getSession()->get($this->getDefine()->SESSION->SESS_LOGIN_USER)
+                    ]
+                ]
+            );
+            if($record != NULL && count($record) > 0){
+            	$record->getFirst()->setInfoStatus($info_status);
+                $record->getFirst()->save();
+                return TRUE;
+            }
+            return FALSE;
+        }
+        catch (Exception $ex){
+            return FALSE;
+        }
+    }
+    
     public function getTokenList()
     {
         try

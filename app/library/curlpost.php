@@ -270,10 +270,6 @@ class curlpost extends ControllerBase
 		$data = curl_exec($c);
 		curl_close($c);
 		
-		if($cookie){
-			unlink($random);
-		}
-		//ACWLog::debug_var('test1112222', $data);
 		$res = json_decode($data,true);
 		return $res;
 	}
@@ -313,9 +309,6 @@ class curlpost extends ControllerBase
 		$data = curl_exec($c);
 		curl_close($c);
 		
-		if($cookie){
-			unlink($random);
-		}
 		$res = json_decode($data,true);
 		return $res;
 	}
