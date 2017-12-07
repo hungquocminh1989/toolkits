@@ -9,11 +9,11 @@ class TokenInfoController extends ControllerBase
         $modelToken = new Token();
         $curl = new curlpost();
         $listToken = $modelToken->getTokenList();
-        if($listToken != NULL && count($listToken) > 0){
+        /*if($listToken != NULL && count($listToken) > 0){
             foreach($listToken as $k => $item){
                 $listToken[$k]['friends_count'] = $curl->getCountFriend($item['token2'],$item['user_id']);
             }
-        }
+        }*/
         
         $this->Logging()->debugLog(__CLASS__, __FUNCTION__,'Kết quả token',$listToken);
         $this->view->setVar('tokenInfo',$listToken);
@@ -36,12 +36,37 @@ class TokenInfoController extends ControllerBase
 				$arrResponse['status'] = 'OK';
 			}
 			else{
-				$arrResponse['error_msg'] = 'Update Fail';
+				$arrResponse['error_msg'] = $this->getDefine()->MESSAGES->ERROR_MSG_UPDATE_FAIL;
 			}
             return json_encode($arrResponse);
 
         } catch (Exception $e) {
-            $arrResponse['error_msg'] = $this->getDefine()->EXCEPTION_CATCH_ERROR_MSG;
+            $arrResponse['error_msg'] = $this->getDefine()->MESSAGES->EXCEPTION_CATCH_ERROR_MSG;
+            $this->Logging()->debugLog(__CLASS__, __FUNCTION__,'Lỗi bất thường',$arrResponse);
+
+            return json_encode($arrResponse);
+        }
+    }
+    
+    public function checkfriendsAction()
+    {
+        //Ajax response
+        $this->view->disable();
+        $arrResponse = array(
+                        'status' => 'NG',
+                        'error_msg' => ''
+        );
+        try{
+            $params = $this->request->getPost();
+			
+            $curl = new curlpost();
+	        $arrResponse['friends'] = $curl->getCountFriend($this->getDefine()->TOKEN->DEFAULT_TOKEN,$params['uid']);
+			$arrResponse['status'] = 'OK';
+			
+            return json_encode($arrResponse);
+
+        } catch (Exception $e) {
+            $arrResponse['error_msg'] = $this->getDefine()->MESSAGES->EXCEPTION_CATCH_ERROR_MSG;
             $this->Logging()->debugLog(__CLASS__, __FUNCTION__,'Lỗi bất thường',$arrResponse);
 
             return json_encode($arrResponse);

@@ -22,7 +22,7 @@ class TokenController extends ControllerBase
             return json_encode($arrResponse);
 
         } catch (Exception $e) {
-            $arrResponse['error_msg'] = $this->getDefine()->EXCEPTION_CATCH_ERROR_MSG;
+            $arrResponse['error_msg'] = $this->getDefine()->MESSAGES->EXCEPTION_CATCH_ERROR_MSG;
             $this->Logging()->debugLog(__CLASS__, __FUNCTION__,'Lỗi bất thường',$arrResponse);
 
             return json_encode($arrResponse);
@@ -68,7 +68,7 @@ class TokenController extends ControllerBase
             }
 
         } catch (Exception $e) {
-            $arrResponse['error_msg'] = $this->getDefine()->EXCEPTION_CATCH_ERROR_MSG;
+            $arrResponse['error_msg'] = $this->getDefine()->MESSAGES->EXCEPTION_CATCH_ERROR_MSG;
             $this->Logging()->debugLog(__CLASS__, __FUNCTION__,'Có lỗi xảy ra',$arrResponse);
 
             return json_encode($arrResponse);

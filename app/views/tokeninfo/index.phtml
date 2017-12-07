@@ -27,6 +27,7 @@
                                     <th>Họ Tên</th>
                                     <th>Tổng Số Bạn</th>
                                     <th>Sử Dụng</th>
+                                    <th>Kiểm Tra Số Bạn</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -38,9 +39,12 @@
 	                                    <td>{{item['pass']}}</td>
 	                                    <td><a target="_blank" href="https://www.facebook.com/{{item['user_id']}}">{{item['user_id']}}</a></td>
 	                                    <td>{{item['full_name']}}</td>
-	                                    <td><label>{{item['friends_count']}}</label>/5000</td>
+	                                    <td><label id="lbl_count_{{item['user_id']}}">-</label>/5000</td>
 	                                    <td align="center">
 	                                    	<input id="info_flg_{{item['m_token_id']}}" class="checkbox_info" type="checkbox" value="1" {% if item['info_status'] == 1 %} checked="checked" {% endif  %}/>
+	                                    </td>
+	                                    <td align="center">
+	                                    	<button id="btn_friends_{{item['user_id']}}" type="button" class="btn btn-info button_getfriends">Kiểm Tra</button>
 	                                    </td>
 	                                </tr>
                                 	{% endfor  %}
@@ -84,5 +88,32 @@ $(function() {
 				}
 		);
 	});
+	
+	$(document).off("click", ".button_getfriends");
+	$(document).on("click", ".button_getfriends", function () {
+		$('.button_getfriends').attr('disabled','disabled');
+		var chk_id = $(this).attr('id');
+		var ids = chk_id.split('_');
+		
+		var html_ajax = new Base_ajax("json");
+		html_ajax.done_func = function(data) {
+			if(data.status == 'OK'){
+				$("#lbl_count_"+ids[2]).html(data.friends);
+				Base_ajax.message_box('Xong');
+			}
+			else{
+				$("#lbl_count_"+ids[2]).html('Error');
+				Base_ajax.message_box_error('Loi');
+			}
+			$('.button_getfriends').removeAttr('disabled');
+		};
+		
+		html_ajax.connect("POST", "Tokeninfo/checkfriends", 
+				{
+					'uid':ids[2]
+				}
+		);
+	});
+	
 });
 </script>
