@@ -29,6 +29,31 @@ class Token extends ModelBase
         }
     }
     
+    public function updateTotalFriend($uid,$iTotal)
+    {
+        try
+        {
+            $record = TableToken::find(
+                [
+                    'm_user_id = :m_user_id: AND user_id = :user_id:',
+                    'bind' => [
+                    	'm_user_id' => $this->getSession()->get($this->getDefine()->SESSION->SESS_LOGIN_USER),
+                        'user_id' => $uid
+                    ]
+                ]
+            );
+            if($record != NULL && count($record) > 0){
+            	$record->getFirst()->setTotalFriends($iTotal);
+                $record->getFirst()->save();
+                return TRUE;
+            }
+            return FALSE;
+        }
+        catch (Exception $ex){
+            return FALSE;
+        }
+    }
+    
     public function getTokenList()
     {
         try

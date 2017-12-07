@@ -27,7 +27,6 @@
                                     <th>Họ Tên</th>
                                     <th>Tổng Số Bạn</th>
                                     <th>Sử Dụng</th>
-                                    <th>Kiểm Tra Số Bạn</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -39,12 +38,17 @@
 	                                    <td>{{item['pass']}}</td>
 	                                    <td><a target="_blank" href="https://www.facebook.com/{{item['user_id']}}">{{item['user_id']}}</a></td>
 	                                    <td>{{item['full_name']}}</td>
-	                                    <td><label id="lbl_count_{{item['user_id']}}">-</label>/5000</td>
-	                                    <td align="center">
-	                                    	<input id="info_flg_{{item['m_token_id']}}" class="checkbox_info" type="checkbox" value="1" {% if item['info_status'] == 1 %} checked="checked" {% endif  %}/>
+	                                    <td><label id="lbl_count_{{item['user_id']}}">
+	                                    {% if item['total_friends'] != '' %} 
+	                                    	{{item['total_friends']}} 
+	                                    {% else  %}
+	                                    	-
+	                                    {% endif  %}</label>/5000
+	                                    	<br>
+	                                    	<button id="btn_friends_{{item['user_id']}}" type="button" class="btn btn-info button_getfriends">Kiểm Tra</button>
 	                                    </td>
 	                                    <td align="center">
-	                                    	<button id="btn_friends_{{item['user_id']}}" type="button" class="btn btn-info button_getfriends">Kiểm Tra</button>
+	                                    	<input id="info_flg_{{item['m_token_id']}}" class="checkbox_info" type="checkbox" value="1" {% if item['info_status'] == 1 %} checked="checked" {% endif  %}/>
 	                                    </td>
 	                                </tr>
                                 	{% endfor  %}

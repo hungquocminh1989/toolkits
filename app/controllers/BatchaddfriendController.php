@@ -1,5 +1,5 @@
 <?php
-
+set_time_limit(0);
 class BatchAddFriendController extends ControllerBase
 {
 
@@ -68,7 +68,10 @@ class BatchAddFriendController extends ControllerBase
     {
         $params = $this->request->get();
         if(isset($params['m_user_id']) === TRUE && $params['m_user_id'] != ''){
-            $m_user_id = $params['m_user_id'];
+        	
+        	$m_user_id = $params['m_user_id'];
+        	//Gán login session
+            $this->getSession()->set($this->getDefine()->SESSION->SESS_LOGIN_USER,$m_user_id);
             $fileLock  = $this->getConfig()->application->tmpDir . $this->getDefine()->LOCK->FOLDER_LOCK . '/'.$m_user_id.'_'. $this->getDefine()->LOCK->FILE_LOCK;
             try {
                 /*if (time() >= strtotime(TIME_STOP)) {

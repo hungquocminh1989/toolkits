@@ -17,6 +17,13 @@ class TableFriends extends \Phalcon\Mvc\Model
      * @var integer
      * @Column(type="integer", length=20, nullable=true)
      */
+    protected $m_user_id;
+
+    /**
+     *
+     * @var integer
+     * @Column(type="integer", length=20, nullable=true)
+     */
     protected $uid;
 
     /**
@@ -49,6 +56,19 @@ class TableFriends extends \Phalcon\Mvc\Model
     public function setMFriendsId($m_friends_id)
     {
         $this->m_friends_id = $m_friends_id;
+
+        return $this;
+    }
+
+    /**
+     * Method to set the value of field m_user_id
+     *
+     * @param integer $m_user_id
+     * @return $this
+     */
+    public function setMUserId($m_user_id)
+    {
+        $this->m_user_id = $m_user_id;
 
         return $this;
     }
@@ -116,6 +136,16 @@ class TableFriends extends \Phalcon\Mvc\Model
     }
 
     /**
+     * Returns the value of field m_user_id
+     *
+     * @return integer
+     */
+    public function getMUserId()
+    {
+        return $this->m_user_id;
+    }
+
+    /**
      * Returns the value of field uid
      *
      * @return integer
@@ -160,7 +190,7 @@ class TableFriends extends \Phalcon\Mvc\Model
      */
     public function initialize()
     {
-        //$this->setSchema("u952687329_dev");
+        $this->setSchema("toolkits");
         $this->setSource("m_friends");
     }
 

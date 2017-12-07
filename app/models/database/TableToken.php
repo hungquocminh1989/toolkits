@@ -65,9 +65,9 @@ class TableToken extends \Phalcon\Mvc\Model
     /**
      *
      * @var integer
-     * @Column(type="integer", length=4, nullable=true)
+     * @Column(type="integer", length=11, nullable=true)
      */
-    protected $friends_count;
+    protected $total_friends;
 
     /**
      *
@@ -89,6 +89,13 @@ class TableToken extends \Phalcon\Mvc\Model
      * @Column(type="integer", length=1, nullable=true)
      */
     protected $info_status;
+
+    /**
+     *
+     * @var integer
+     * @Column(type="integer", length=20, nullable=true)
+     */
+    protected $m_user_id;
 
     /**
      *
@@ -216,14 +223,14 @@ class TableToken extends \Phalcon\Mvc\Model
     }
 
     /**
-     * Method to set the value of field friends_count
+     * Method to set the value of field total_friends
      *
-     * @param integer $friends_count
+     * @param integer $total_friends
      * @return $this
      */
-    public function setFriendsCount($friends_count)
+    public function setTotalFriends($total_friends)
     {
-        $this->friends_count = $friends_count;
+        $this->total_friends = $total_friends;
 
         return $this;
     }
@@ -263,6 +270,19 @@ class TableToken extends \Phalcon\Mvc\Model
     public function setInfoStatus($info_status)
     {
         $this->info_status = $info_status;
+
+        return $this;
+    }
+
+    /**
+     * Method to set the value of field m_user_id
+     *
+     * @param integer $m_user_id
+     * @return $this
+     */
+    public function setMUserId($m_user_id)
+    {
+        $this->m_user_id = $m_user_id;
 
         return $this;
     }
@@ -387,13 +407,13 @@ class TableToken extends \Phalcon\Mvc\Model
     }
 
     /**
-     * Returns the value of field friends_count
+     * Returns the value of field total_friends
      *
      * @return integer
      */
-    public function getFriendsCount()
+    public function getTotalFriends()
     {
-        return $this->friends_count;
+        return $this->total_friends;
     }
 
     /**
@@ -424,6 +444,16 @@ class TableToken extends \Phalcon\Mvc\Model
     public function getInfoStatus()
     {
         return $this->info_status;
+    }
+
+    /**
+     * Returns the value of field m_user_id
+     *
+     * @return integer
+     */
+    public function getMUserId()
+    {
+        return $this->m_user_id;
     }
 
     /**
@@ -461,7 +491,7 @@ class TableToken extends \Phalcon\Mvc\Model
      */
     public function initialize()
     {
-        //$this->setSchema("u952687329_dev");
+        $this->setSchema("toolkits");
         $this->setSource("m_token");
     }
 
