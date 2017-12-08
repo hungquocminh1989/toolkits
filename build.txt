@@ -1,5 +1,7 @@
+sudo service httpd stop
 cd /usr/share/httpd/html/
 rm -rf toolkits
 git clone https://github.com/hungquocminh1989/toolkits.git
 chmod -R 777 /usr/share/httpd/html/toolkits/tmp
 chmod -R 777 /usr/share/httpd/html/toolkits/cache
+sudo service httpd start
