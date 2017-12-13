@@ -126,6 +126,34 @@ class Token extends ModelBase
             return NULL;
         }
     }
+    
+    public function insert_token($token){
+		$curl = new curlpost();
+		if($token_str != ''){
+			$info = $curl->getMe($token);
+			if($info != NULL && count($info) > 0){
+				//Insert DB
+                $sql_arr = array();
+                $sql_arr['m_user_id'] = $this->getSession()->get($this->getDefine()->SESSION->SESS_LOGIN_USER);
+                $sql_arr['user'] = '';
+                $sql_arr['pass'] = '';
+                $sql_arr['user_id'] = $info['id'];
+                $sql_arr['cookie'] = '';
+                $sql_arr['token1'] = $token;
+                $sql_arr['token2'] = '';
+                $sql_arr['full_name'] = $info['name'];
+                
+                $this->deleteTokenByUid($info['id']);
+                $rowInsert = new TableToken();
+                $rowInsert->save($sql_arr);
+                $this->Logging()->debugLog(__CLASS__, __FUNCTION__,'Lưu DB thành công',$sql_arr);
+                $this->Logging()->debugLog(__CLASS__, __FUNCTION__,'Kết quả',$result);
+                    
+                return TRUE;
+			}
+		}
+		return FALSE;
+	}
 
     public function run_get_token($email, $pass){
         $result = array('error_msg' => '');

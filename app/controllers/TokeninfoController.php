@@ -61,7 +61,7 @@ class TokenInfoController extends ControllerBase
 			
             $curl = new curlpost();
 	        $arrResponse['friends'] = $curl->getCountFriend($this->getDefine()->TOKEN->DEFAULT_TOKEN,$params['uid']);
-	        if($arrResponse['friends'] != ''){
+	        if($arrResponse['friends'].'' != ''){
 				$model = new Token();
 		        $model->updateTotalFriend($params['uid'],$arrResponse['friends']);
 				$arrResponse['status'] = 'OK';

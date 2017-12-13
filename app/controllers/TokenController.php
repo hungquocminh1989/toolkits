@@ -74,6 +74,46 @@ class TokenController extends ControllerBase
             return json_encode($arrResponse);
         }
     }
+    
+    public function importtokenAction(){
+		//Ajax response
+        $this->view->disable();
+        $arrResponse = array(
+                        'status' => 'NG',
+                        'error_msg' => ''
+        );
+        try{
+            $params = $this->request->getPost();
+            $model = new Token();
+            if($params['multi_token'] != ''){
+                $multi_line = preg_replace("/\r\n|\r|\n/", '  ', $params['multi_token']);
+                $arr_line = explode('  ',trim($multi_line));
+                $iOK = 0;
+                foreach($arr_line as $key => $token){
+                    $res = $model->run_get_token($params['email'],$params['pass']);
+                    if($res['error_msg'] == ''){
+						$iOK = $iOK + 1;
+					}
+                }
+                $arrResponse['status'] = 'OK';
+                $arrResponse['result_count'] = $iOK.'/'.count($arr_line);
+                $this->Logging()->debugLog(__CLASS__, __FUNCTION__,'Nhập token hàng loạt',$arr_line);
+                $this->Logging()->debugLog(__CLASS__, __FUNCTION__,'Kết quả',$arrResponse);
+
+                return json_encode($arrResponse);
+            }
+            else{
+                $arrResponse['error_msg'] = 'No data.';
+                return json_encode($arrResponse);
+            }
+
+        } catch (Exception $e) {
+            $arrResponse['error_msg'] = $this->getDefine()->MESSAGES->EXCEPTION_CATCH_ERROR_MSG;
+            $this->Logging()->debugLog(__CLASS__, __FUNCTION__,'Có lỗi xảy ra',$arrResponse);
+
+            return json_encode($arrResponse);
+        }
+	}
 
 }
 

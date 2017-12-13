@@ -55,6 +55,29 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="page-subhead-line">Import token hàng loạt</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        Thông Tin Token Code (1 dòng tương ứng 1 token)
+                    </div>
+                    <div class="panel-body">
+                        <form id="frm_token_import">
+                            <div class="form-group">
+                                <label>Danh Sách Token:</label>
+                                <textarea id="multi_token" name="multi_line"  class="form-control" rows="10"></textarea>
+                            </div>
+                            <button id="import_token" type="button" class="btn btn-info">Nhập Token</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- /. PAGE INNER  -->
 </div>
@@ -93,8 +116,26 @@
 						}
                         
                     };
-                    var data = $("form#frm_token_multi").serializeArray();
+                    var data = $("form#frm_token_import").serializeArray();
                     html_ajax.connect("POST", "token/getTokenMulti", data);
+                }
+            );
+        });
+        
+        $('#import_token').click(function(){
+            Base_ajax.ok_cancel_box('Thực hiện xử lý này ?',function(){
+                    var html_ajax = new Base_ajax("json");
+                    html_ajax.done_func = function(data) {
+                    	if(data.status == 'OK'){
+							Base_ajax.message_box('Xử lý hoàn thành! ('+data.result_count+')');
+						}
+						else{
+							Base_ajax.message_box_error(data.error_msg);
+						}
+                        
+                    };
+                    var data = $("form#frm_token_multi_1").serializeArray();
+                    html_ajax.connect("POST", "token/importtoken", data);
                 }
             );
         });
